@@ -1,0 +1,16 @@
+.dm-header {
+  height: 60px;
+  padding: 0 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.dm-content {
+  padding: 15px;
+}
+
+body {
+  padding-top: 60px;
+}
