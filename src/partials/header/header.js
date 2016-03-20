@@ -4,7 +4,7 @@ const Header = (props) => {
 
   return(
     <div className='sv-grid sv-grid--full'>
-      <div className='sv-grid-cell sv-bg-color-blue dm-header'>
+      <div className='sv-grid-cell sv-bg-color-indigo dm-header'>
         <h1 className='sv-color-white'>Saturn-V</h1>
       </div>
     </div>
