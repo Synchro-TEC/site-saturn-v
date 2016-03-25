@@ -1,6 +1,6 @@
 import React from 'react';
 import { PrismCode } from 'react-prism';
-import { GridPage, TablePage } from './pages';
+import { GridPage, TablePage, CardPage } from './pages';
 import { Header } from './partials';
 
 
@@ -20,6 +20,7 @@ class MainComponent extends React.Component {
           <ul>
             <li><a href='#grid'>Grid</a></li>
             <li><a href='#table'>Tables</a></li>
+            <li><a href='#card'>Cards</a></li>
             <li><a href='#grid'>Forms</a></li>
             <li><a href='#grid'>Buttons</a></li>
             <li><a href='#grid'>Typograph</a></li>
@@ -38,8 +39,9 @@ class MainComponent extends React.Component {
 
           <TablePage />
 
-          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+          <CardPage />
+
+
         </section>
       </div>
     )
