@@ -18,16 +18,19 @@ pre {
 }
 
 .dm-sidebar {
-  border-right: 1px solid #cfd8dc;
   width: 200px;
   height: 100vh;
   position: fixed;
-  padding: 15px 0px;
+  padding: 0px;
+  box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px;
+}
+
+.dm-sidebar header {
+  padding: 30px 0;
 }
 
 .dm-sidebar ul li a {
-  font-size: 1em;
-
+  font-weight: 600;
   text-decoration: none;
   padding: 10px 0 10px 15px;
   display: block;
@@ -49,7 +52,7 @@ pre {
 }
 
 .dm-banner {
-  font-size: 4.5rem;
+  font-size: 4rem;
   line-height: 1.3;
 }
 

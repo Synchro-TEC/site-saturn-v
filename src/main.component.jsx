@@ -14,9 +14,9 @@ class MainComponent extends React.Component {
     return (
       <div>
         <aside className='dm-sidebar'>
-          <p className='sv-text-center'>
+          <header className='sv-bg-color-blue-800 sv-text-center'>
             <img height='auto' src='logo.svg' width='160' />
-          </p>
+          </header>
           <ul>
             <li><a href='#grid'>Grid</a></li>
             <li><a href='#table'>Tables</a></li>
@@ -27,12 +27,12 @@ class MainComponent extends React.Component {
             <li><a href='#grid'>Helpes</a></li>
           </ul>
         </aside>
-        <section className='dm-main sv-bg-color-grey-50'>
+        <section className='dm-main'>
           <p className='sv-text-center'>
             <img src='hero.svg' style={{width: '75%', height: 'auto'}} />
           </p>
           <div className='dm-about'>
-            <h2 className='dm-banner sv-text-center sv-thin-text'>Saturn V is a CSS Framework with focus on web application development.</h2>
+            <h2 className='dm-banner sv-text-center sv-thin-text'>A CSS Framework thought to launch Web Applications.</h2>
           </div>
           <GridPage />
 
