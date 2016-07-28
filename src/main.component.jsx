@@ -14,8 +14,8 @@ class MainComponent extends React.Component {
     return (
       <div>
         <aside className='dm-sidebar'>
-          <header className='sv-bg-color-blue-800 sv-text-center'>
-            <img height='auto' src='logo.svg' width='160' />
+          <header className='sv-bg-color-blue-50 sv-text-center'>
+            <img height='auto' src='sv-logo.svg' width='160' />
           </header>
           <ul>
             <li><a href='#grid'>Grid</a></li>
@@ -30,10 +30,24 @@ class MainComponent extends React.Component {
         </aside>
         <section className='dm-main'>
           <p className='sv-text-center'>
-            <img src='hero.svg' style={{width: '75%', height: 'auto'}} />
+            <img src='sv-logo.svg' style={{width: 'auto', height: '99vh'}} />
           </p>
           <div className='dm-about'>
-            <h2 className='dm-banner sv-text-center sv-thin-text'>A CSS Framework thought to launch Web Applications.</h2>
+            <h1 className='sv-color-blue-grey-800'>Sobre</h1>
+            <p>O <em>Saturn-V</em> <del>foi</del> está sendo criado para ser a base dos produtos desenvolvidos
+              por um dos times de desenvolvimento da <em>Synchro</em>, nasceu para ser um facilitador e
+              ao mesmo tempo um padrão para nossos produtos.</p>
+            <p>Diferente de outros frameworks, que além de um padrão visual entregam também
+              compontens JavaScript, no <em>Saturn-V</em> optamos em entregar apenas o padrão visual, <strong>apenas</strong> o
+              CSS e um guia semântico de HTML, mostrando como utilizar o mesmo. </p>
+            <p>Estamos trabalhando separadamente em componentes JS, inicialmente em React, que
+              irão usar o <em>Saturn-V</em> como base.</p>
+            <div className="sv-vertical-marged-50"></div>
+            <h3 className='sv-color-blue-grey-800'>Arquitetura</h3>
+            <p>
+              Optamos por usar uma arquitetura híbrida, usando conceitos e patterns CSS como <a href="https://smacss.com/">SMACSS</a>,&nbsp;
+                <a href="http://getbem.com/introduction/">BEM</a> e <a href='http://itcss.io/'>ITCSS</a>.
+            </p>
           </div>
           <GridPage />
 

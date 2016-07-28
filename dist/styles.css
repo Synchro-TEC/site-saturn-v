@@ -51,6 +51,7 @@ pre {
   padding: 15px;
 }
 
+
 .dm-banner {
   font-size: 4rem;
   line-height: 1.3;
@@ -73,7 +74,9 @@ pre {
 .dm-grid-show .sv-container:last-of-type [class*='grid-'] {
   border-bottom: 1px solid #e1e1e1;
 }*/
-
+.dm-grid-show {
+  padding: 0;
+}
 .dm-grid-show .col {
   background-color: #fff;
   border: 1px solid #e1e1e1;
