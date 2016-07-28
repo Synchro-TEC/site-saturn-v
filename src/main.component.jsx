@@ -14,7 +14,7 @@ class MainComponent extends React.Component {
     return (
       <div>
         <aside className='dm-sidebar'>
-          <header className='sv-bg-color-blue-50 sv-text-center'>
+          <header className=' sv-text-center'>
             <img height='auto' src='sv-logo.svg' width='160' />
           </header>
           <ul>
@@ -25,30 +25,44 @@ class MainComponent extends React.Component {
             <li><a href='#buttons'>Buttons</a></li>
             <li><a href='#grid'>Typograph</a></li>
             <li><a href='#grid'>Colors</a></li>
-            <li><a href='#grid'>Helpes</a></li>
+            <li><a href='#grid'>Helpers</a></li>
           </ul>
         </aside>
         <section className='dm-main'>
-          <p className='sv-text-center'>
-            <img src='sv-logo.svg' style={{width: 'auto', height: '99vh'}} />
+          <p className='sv-text-center' style={{height: '70vh'}}>
+            <img src='sv-logo.svg' style={{width: 'auto', height: '60vh'}} />
           </p>
           <div className='dm-about'>
             <h1 className='sv-color-blue-grey-800'>Sobre</h1>
-            <p>O <em>Saturn-V</em> <del>foi</del> está sendo criado para ser a base dos produtos desenvolvidos
-              por um dos times de desenvolvimento da <em>Synchro</em>, nasceu para ser um facilitador e
-              ao mesmo tempo um padrão para nossos produtos.</p>
-            <p>Diferente de outros frameworks, que além de um padrão visual entregam também
-              compontens JavaScript, no <em>Saturn-V</em> optamos em entregar apenas o padrão visual, <strong>apenas</strong> o
-              CSS e um guia semântico de HTML, mostrando como utilizar o mesmo. </p>
-            <p>Estamos trabalhando separadamente em componentes JS, inicialmente em React, que
-              irão usar o <em>Saturn-V</em> como base.</p>
+            <p>
+              O Saturn-V nasceu da nossa necessidade por um Framework CSS que fosse leve, simples e com o foco apenas no desenvolvimento de
+              Web Applications.
+            </p>
+
+            <p>
+              Tentamos outros frameworks, mas a grande maioria fazem muito mais do que precisamos e além do visual tendencioso entregam
+              também componentes JavaScript e com isso, comportamento que nem sempre eram o que precisávamos.
+            </p>
+
+            <p>
+              No  Saturn-V  optamos pela simplicidade, nosso foco está em nossos produtos (Web Applications) e implementamos apenas o que
+              necessitamos, entregando somente o CSS.
+            </p>
+
+            <p>
+              Optamos por desenvolver separadamente os componentes JS, usando o Saturn-V como base, desta forma, podemos ter componentes
+              usando o Saturn-V com React, Angular, Vanilla, etc. O que é fundamental em nosso cenário.
+            </p>
+
             <div className="sv-vertical-marged-50"></div>
+
             <h3 className='sv-color-blue-grey-800'>Arquitetura</h3>
             <p>
-              Optamos por usar uma arquitetura híbrida, usando conceitos e patterns CSS como <a href="https://smacss.com/">SMACSS</a>,&nbsp;
+              Optamos por usar uma arquitetura híbrida, usando diversos conceitos e patterns CSS como: <a href="https://smacss.com/">SMACSS</a>,&nbsp;
                 <a href="http://getbem.com/introduction/">BEM</a> e <a href='http://itcss.io/'>ITCSS</a>.
             </p>
           </div>
+
           <GridPage />
 
           <TablePage />

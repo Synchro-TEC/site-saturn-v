@@ -1,5 +1,6 @@
 import React from 'react';
 import {PrismCode} from 'react-prism';
+import ShowCode from '../../components/ShowCode.jsx';
 
 const TablePage = (props) => {
 
@@ -8,8 +9,9 @@ const TablePage = (props) => {
       <a name="table"></a>
       <div>
         <h3 className='sv-color-blue-grey-800'>Tables</h3>
-        <p>O emos </p>
-        <h5>Table</h5>
+        <p>A tabela no Saturn-V possui diversas variantes, inclusive um modelo de tabela responsíva, podemos ainda usar essas variações
+          em conjunto. Veja abaixo todas as variantes.</p>
+        <h5>Tabela Comum</h5>
         <table className="sv-table">
           <thead>
           <tr>
@@ -41,15 +43,15 @@ const TablePage = (props) => {
           </tbody>
         </table>
 
-        <pre className="line-numbers" data-start="1">
+        <ShowCode>
           <PrismCode className="language-html">
             {require('!raw-loader!./table-01.html')}
           </PrismCode>
-        </pre>
+        </ShowCode>
 
         <div className="sv-vertical-marged-50"></div>
 
-        <h5 className='sv-color-blue-grey-800'>Table with hover</h5>
+        <h5 className='sv-color-blue-grey-800'>Tabela com efeito de hover nas linhas</h5>
         <table className="sv-table with--hover">
           <thead>
           <tr>
@@ -81,15 +83,15 @@ const TablePage = (props) => {
           </tbody>
         </table>
 
-        <pre className="line-numbers" data-start="1">
+        <ShowCode>
           <PrismCode className="language-html">
             {require('!raw-loader!./table-02.html')}
           </PrismCode>
-        </pre>
+        </ShowCode>
 
         <div className="sv-vertical-marged-50"></div>
 
-        <h5 className='sv-color-blue-grey-800'>Table with borders</h5>
+        <h5 className='sv-color-blue-grey-800'>Tabela com bordas</h5>
         <table className="sv-table with--borders">
           <thead>
           <tr>
@@ -121,15 +123,15 @@ const TablePage = (props) => {
           </tbody>
         </table>
 
-        <pre className="line-numbers" data-start="1">
+        <ShowCode>
           <PrismCode className="language-html">
             {require('!raw-loader!./table-03.html')}
           </PrismCode>
-        </pre>
+        </ShowCode>
 
         <div className="sv-vertical-marged-50"></div>
 
-        <h5 className='sv-color-blue-grey-800'>Table with borders and shadow</h5>
+        <h5 className='sv-color-blue-grey-800'>Table com bordas e sombra</h5>
         <table className="sv-table with--borders with--shadow">
           <thead>
           <tr>
@@ -161,15 +163,15 @@ const TablePage = (props) => {
           </tbody>
         </table>
 
-        <pre className="line-numbers" data-start="1">
+        <ShowCode>
           <PrismCode className="language-html">
             {require('!raw-loader!./table-04.html')}
           </PrismCode>
-        </pre>
+        </ShowCode>
 
         <div className="sv-vertical-marged-50"></div>
 
-        <h5 className='sv-color-blue-grey-800'>Table Condensed with Border and Hover</h5>
+        <h5 className='sv-color-blue-grey-800'>Tabela condensada, com borda e efeito de hover</h5>
         <table className="sv-table--condensed with--hover with--borders">
           <thead>
           <tr>
@@ -201,15 +203,15 @@ const TablePage = (props) => {
           </tbody>
         </table>
 
-        <pre className="line-numbers" data-start="1">
+        <ShowCode>
           <PrismCode className="language-html">
-            {require('!raw-loader!./table-04.html')}
+            {require('!raw-loader!./table-06.html')}
           </PrismCode>
-        </pre>
+        </ShowCode>
 
         <div className="sv-vertical-marged-50"></div>
 
-        <h5 className='sv-color-blue-grey-800'>Table Striped with Border and Hover</h5>
+        <h5 className='sv-color-blue-grey-800'>Tabela zebreada com borda e efeito de hover</h5>
         <table className="sv-table with--borders with--stripes">
           <thead>
           <tr>
@@ -247,18 +249,18 @@ const TablePage = (props) => {
           </tbody>
         </table>
 
-        <pre className="line-numbers" data-start="1">
+        <ShowCode>
           <PrismCode className="language-html">
             {require('!raw-loader!./table-04.html')}
           </PrismCode>
-        </pre>
+        </ShowCode>
 
         <div className="sv-vertical-marged-50"></div>
 
-        <h5 className='sv-color-blue-grey-800'>Responsive Tables</h5>
-        <div className="table-responsive-vertical with-shadow">
+        <h5 className='sv-color-blue-grey-800'>Tabela Responsiva</h5>
+        <div className="sv-table-responsive-vertical">
 
-          <table className="table table-hover table-bordered">
+          <table className="sv-table with--hover with--borders">
             <thead>
               <tr>
                 <th>Id</th>
@@ -289,11 +291,11 @@ const TablePage = (props) => {
             </tbody>
           </table>
         </div>
-        <pre className="line-numbers" data-start="1">
+        <ShowCode>
           <PrismCode className="language-html">
             {require('!raw-loader!./demo.html')}
           </PrismCode>
-        </pre>
+        </ShowCode>
       </div>
     </div>
   );
