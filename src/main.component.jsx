@@ -14,8 +14,8 @@ class MainComponent extends React.Component {
     return (
       <div>
         <aside className='dm-sidebar'>
-          <header className=' sv-text-center'>
-            <img height='auto' src='sv-logo.svg' width='160' />
+          <header className='sv-text-center sv-bg-color-gray-100'>
+            <img height='auto' src='sv-logo-rocket.svg' width='90' />
           </header>
           <ul>
             <li><a href='#grid'>Grid</a></li>
@@ -27,10 +27,15 @@ class MainComponent extends React.Component {
             <li><a href='#grid'>Colors</a></li>
             <li><a href='#grid'>Helpers</a></li>
           </ul>
+          <div className='dm-syntec'>
+            <a href='https://github.com/Synchro-TEC' target='_blank' rel='noopen'>
+              <img height='40' src='syntec.svg' width='auto' />
+            </a>
+          </div>
         </aside>
         <section className='dm-main'>
-          <p className='sv-text-center' style={{height: '70vh'}}>
-            <img src='sv-logo.svg' style={{width: 'auto', height: '60vh'}} />
+          <p className='sv-text-center'>
+            <img src='sv-logo.svg' style={{width: 'auto', height: '95vh'}} />
           </p>
           <div className='dm-about'>
             <h1 className='sv-color-blue-grey-800'>Sobre</h1>

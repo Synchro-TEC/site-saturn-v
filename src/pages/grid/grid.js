@@ -5,10 +5,10 @@ import ShowCode from '../../components/ShowCode.jsx';
 const GridPage = (props) => {
 
   return(
-    <div className='dm-content'>
+    <div>
       <a name="grid"></a>
-      <div className='dm-grid-show'>
-
+      <div className='dm-content'>
+        <div className='dm-grid-show'>
           <h4 className='sv-color-blue-grey-800'>Grid System</h4>
 
           <p>
@@ -105,6 +105,7 @@ const GridPage = (props) => {
           </ShowCode>
       </div>
     </div>
+      </div>
   );
 
 };

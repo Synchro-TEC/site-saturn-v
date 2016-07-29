@@ -5,12 +5,13 @@ import ShowCode from '../../components/ShowCode.jsx';
 const TablePage = (props) => {
 
   return(
-    <div className='dm-content'>
+    <div>
       <a name="table"></a>
-      <div>
-        <h3 className='sv-color-blue-grey-800'>Tables</h3>
+      <div className='dm-content'>
+        <h4 className='sv-color-blue-grey-800'>Tables</h4>
         <p>A tabela no Saturn-V possui diversas variantes, inclusive um modelo de tabela responsíva, podemos ainda usar essas variações
           em conjunto. Veja abaixo todas as variantes.</p>
+        <div className="sv-vertical-marged-50"></div>
         <h5>Tabela Comum</h5>
         <table className="sv-table">
           <thead>
