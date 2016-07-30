@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MainComponent from './main.component.jsx';
+import App from './App';
 
 var mountNode = document.getElementById('main');
 
-ReactDOM.render(<MainComponent />, mountNode);
+ReactDOM.render(<App />, mountNode);

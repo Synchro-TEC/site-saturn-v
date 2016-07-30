@@ -5,7 +5,7 @@ const ButtonsPage = (props) => {
 
   return(
     <div>
-      <a name="buttons"></a>
+      <a name='buttons'></a>
       <div className='dm-content'>
         <h2>Buttons</h2>
         <p>Buttons..</p>

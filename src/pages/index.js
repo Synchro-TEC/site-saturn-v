@@ -9,5 +9,5 @@ export {
   FormPage,
   GridPage,
   TablePage,
-  CardPage
+  CardPage,
 }

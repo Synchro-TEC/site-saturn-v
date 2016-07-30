@@ -14,7 +14,6 @@ pre {
 }
 
 .dm-content {
-  margin-top: 20px;
   padding: 15px;
 }
 
@@ -22,13 +21,13 @@ pre {
   width: 250px;
   height: 100vh;
   position: fixed;
-  padding: 0px;
-  /*box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px;*/
+  padding: 0;
   box-shadow: 1px 0 2px rgba(0,0,0,.2);
+  top: 0;
 }
 
 .dm-sidebar header {
-  padding: 30px 0;
+  padding: 0;
 }
 
 .dm-sidebar ul li a {
@@ -40,7 +39,8 @@ pre {
   color: #444;
 }
 
-.dm-sidebar ul li a:hover {
+.dm-sidebar ul li a:hover,
+.dm-sidebar ul li a.active {
   background-color: #f9fafc;
   padding: 7px 0 7px 20px;
   border-left: 5px solid #bc3347;
@@ -49,8 +49,17 @@ pre {
 .dm-main {
   width: calc(100% - 250px);
   margin-left: 250px;
+  /*margin-top: 50px;*/
   padding: 15px;
 }
+
+/*.dm-header-main {*/
+  /*width: calc(100% - 250px);*/
+  /*margin-left: 250px;*/
+  /*height: 50px;*/
+  /*position: fixed;*/
+  /*top: 0;*/
+/*}*/
 
 .dm-about {
   /*height: 85vh;*/
@@ -71,7 +80,7 @@ pre {
 }
 
 .dm-code-contaiter.inactive {
-  border-top: none;
+  border: none;
 }
 
 .dm-code-contaiter__button {
@@ -80,8 +89,8 @@ pre {
   line-height: 40px;
   text-align: center;
   border: none;
-  border-top: 1px solid #e0e6ed;
-  background-color: #f9fafc;
+  /*border-top: 1px solid #e0e6ed;*/
+  background-color: transparent;
   color: #9299ae;
   text-transform: uppercase;
   font-weight: 300;
@@ -89,7 +98,8 @@ pre {
 }
 
 .dm-code-contaiter__button:hover {
-  background-color: #e0e6ed;
+  color: #4c4f5b;
+  /*background-color: #e0e6ed;*/
 }
 
 .dm-syntec {
