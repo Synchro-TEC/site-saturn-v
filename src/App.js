@@ -8,6 +8,10 @@ import TablePage from './pages/table/table';
 import CardPage from './pages/card/card';
 import FormPage from './pages/form/form';
 import ButtonsPage from './pages/buttons/buttons';
+import TypographPage from './pages/typograph/Typograph';
+
+import HelpersPage from './pages/helpers/HelpersPage';
+import ColorsPage from './pages/colors/ColorsPage';
 
 const App = () => (
   <Router history={hashHistory}>
@@ -18,6 +22,10 @@ const App = () => (
       <Route component={CardPage} path='/cards' />
       <Route component={FormPage} path='/forms' />
       <Route component={ButtonsPage} path='/buttons' />
+      <Route component={TypographPage} path='/typograph' />
+      <Route component={ColorsPage} path='/colors' />
+      <Route component={HelpersPage} path='/helpers' />
+
 
       {/*<Route path='dashboards'>*/}
         {/*<IndexRoute components={{header: IndexHeaderDashboardPage, main: IndexDashboardPage}} />*/}

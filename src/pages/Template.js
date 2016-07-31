@@ -14,9 +14,9 @@ function Template(props) {
           <li><Link activeClassName='active' to='cards'>Cards</Link></li>
           <li><Link activeClassName='active' to='forms'>Forms</Link></li>
           <li><Link activeClassName='active' to='buttons'>Buttons</Link></li>
-          <li><a href='#grid'>Typograph</a></li>
-          <li><a href='#grid'>Colors</a></li>
-          <li><a href='#grid'>Helpers</a></li>
+          <li><Link activeClassName='active' to='typograph'>Typograph</Link></li>
+          <li><Link activeClassName='active' to='colors'>Colors</Link></li>
+          <li><Link activeClassName='active' to='helpers'>Helpers</Link></li>
         </ul>
         <div className='dm-syntec'>
           <a href='https://github.com/Synchro-TEC' target='_blank' rel='noopen'>
