@@ -7,6 +7,7 @@ import GridPage from './pages/grid/Grid';
 import TablePage from './pages/table/table';
 import CardPage from './pages/card/card';
 import FormPage from './pages/form/form';
+import ButtonsPage from './pages/buttons/buttons';
 
 const App = () => (
   <Router history={hashHistory}>
@@ -16,6 +17,7 @@ const App = () => (
       <Route component={TablePage} path='/tables' />
       <Route component={CardPage} path='/cards' />
       <Route component={FormPage} path='/forms' />
+      <Route component={ButtonsPage} path='/buttons' />
 
       {/*<Route path='dashboards'>*/}
         {/*<IndexRoute components={{header: IndexHeaderDashboardPage, main: IndexDashboardPage}} />*/}

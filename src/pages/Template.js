@@ -13,12 +13,16 @@ function Template(props) {
           <li><Link activeClassName='active' to='tables'>Tables</Link></li>
           <li><Link activeClassName='active' to='cards'>Cards</Link></li>
           <li><Link activeClassName='active' to='forms'>Forms</Link></li>
-          <li><a href='#buttons'>Buttons</a></li>
+          <li><Link activeClassName='active' to='buttons'>Buttons</Link></li>
           <li><a href='#grid'>Typograph</a></li>
           <li><a href='#grid'>Colors</a></li>
           <li><a href='#grid'>Helpers</a></li>
         </ul>
         <div className='dm-syntec'>
+          <a href='https://github.com/Synchro-TEC' target='_blank' rel='noopen'>
+            <img height='auto' src='logo-synchro.png' width='100'/>
+          </a>
+          <br />
           <a href='https://github.com/Synchro-TEC' target='_blank' rel='noopen'>
             <img height='40' src='syntec.svg' width='auto'/>
           </a>
