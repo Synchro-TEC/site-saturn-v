@@ -6,9 +6,10 @@ function Template(props) {
     <div>
       <aside className='dm-sidebar'>
         <header className='sv-text-center'>
-          <Link to='/'><img height='auto' src='sv-logo.svg' width='200'/></Link>
+          <Link title='Back to home'  to='/'><img height='auto' src='sv-logo.svg' width='200'/></Link>
         </header>
         <ul>
+          <li><Link activeClassName='active' to='install'>How to use</Link></li>
           <li><Link activeClassName='active' to='grid'>Grid</Link></li>
           <li><Link activeClassName='active' to='tables'>Tables</Link></li>
           <li><Link activeClassName='active' to='cards'>Cards</Link></li>

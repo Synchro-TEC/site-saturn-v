@@ -6,7 +6,7 @@ const GridPage = (props) => {
   return (
     <div className='dm-content'>
       <div className='dm-grid-show'>
-        <h4 className='sv-color-blue-grey-800 sv-header'>Grid System</h4>
+        <h4 className='sv-title'>Grid System</h4>
 
         <p>
           Nosso <em>Grid System</em> é responsivo, desenvolvido usando flex-box e segue o padão de 12 colunas.

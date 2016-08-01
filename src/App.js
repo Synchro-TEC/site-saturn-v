@@ -12,6 +12,7 @@ import TypographPage from './pages/typograph/Typograph';
 
 import HelpersPage from './pages/helpers/HelpersPage';
 import ColorsPage from './pages/colors/ColorsPage';
+import InstallPage from './pages/install/InstallPage';
 
 const App = () => (
   <Router history={hashHistory}>
@@ -25,6 +26,7 @@ const App = () => (
       <Route component={TypographPage} path='/typograph' />
       <Route component={ColorsPage} path='/colors' />
       <Route component={HelpersPage} path='/helpers' />
+      <Route component={InstallPage} path='/install' />
 
 
       {/*<Route path='dashboards'>*/}

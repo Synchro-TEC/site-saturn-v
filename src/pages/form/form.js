@@ -6,8 +6,9 @@ const FormPage = (props) => {
   return(
     <div className='dm-content'>
       <div className='dm-grid-show'>
-        <h4 className='sv-color-blue-grey-800 sv-header'>Forms</h4>
-        <h5>Simple form</h5>
+        <h4 className='sv-title'>Forms</h4>
+        We have some options to forms.
+        <h5 className='sv-title'>Simple form</h5>
         <form className='sv-form'>
           <label>
             <span>Name</span>
@@ -33,7 +34,7 @@ const FormPage = (props) => {
 
         <div className='sv-vertical-marged-50' />
 
-        <h5>Inline Form</h5>
+        <h5 className='sv-title'>Inline Form</h5>
         <form className='sv-form--inline'>
           <label>
             <span>Name</span>
@@ -56,7 +57,7 @@ const FormPage = (props) => {
 
         <div className='sv-vertical-marged-50' />
 
-        <h5>Status</h5>
+        <h5 className='sv-title'>Status</h5>
         <form className='sv-form'>
           <label>
             <span>Name</span>

@@ -5,7 +5,7 @@ import ShowCode from '../../components/ShowCode.jsx';
 const CardPage = (props) => {
   return (
     <div className='dm-content'>
-      <h4 className='sv-color-blue-grey-800 sv-header'>Cards</h4>
+      <h4 className='sv-title'>Cards</h4>
 
 
       <p>A simple card</p>

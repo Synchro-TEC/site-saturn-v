@@ -5,7 +5,7 @@ import ShowCode from '../../components/ShowCode.jsx';
 const HelpersPage = (props) => {
   return (
     <div className='dm-content'>
-      <h4 className='sv-color-blue-grey-800 sv-header'>Helpers</h4>
+      <h4 className='sv-title'>Helpers</h4>
 
 
     </div>

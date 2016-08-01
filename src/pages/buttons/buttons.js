@@ -5,7 +5,7 @@ const ButtonsPage = (props) => {
 
   return(
     <div className='dm-content'>
-      <h4 className='sv-color-blue-grey-800 sv-header'>Buttons</h4>
+      <h4 className='sv-title'>Buttons</h4>
 
       <p><button className='sv-button default'>Default button</button></p>
       <p><button className='sv-button primary'>Primary button</button></p>

@@ -5,7 +5,7 @@ const TypographPage = (props) => {
 
   return(
     <div className='dm-content'>
-      <h4 className='sv-color-blue-grey-800 sv-header'>Typograph</h4>
+      <h4 className='sv-title'>Typograph</h4>
 
 
 
