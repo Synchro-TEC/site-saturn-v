@@ -9,6 +9,7 @@ const FormPage = (props) => {
         <h4 className='sv-title'>Forms</h4>
         We have some options to forms.
         <h5 className='sv-title'>Simple form</h5>
+
         <form className='sv-form'>
           <label>
             <span>Name</span>
@@ -67,6 +68,14 @@ const FormPage = (props) => {
             <span>E-mail</span>
             <input type='text' name='email' className='is--valid' />
           </label>
+        </form>
+
+        <h5 className='sv-title'>Input Group</h5>
+        <form className='sv-form'>
+          <div className='sv-input-group'>
+            <input type='text' name='email' />
+            <button className='sv-button primary' type='button'>Enviar</button>
+          </div>
         </form>
       </div>
     </div>

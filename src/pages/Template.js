@@ -9,7 +9,7 @@ function Template(props) {
           <Link title='Back to home'  to='/'><img height='auto' src='sv-logo.svg' width='200'/></Link>
         </header>
         <ul>
-          <li><Link activeClassName='active' to='install'>How to use</Link></li>
+          <li><Link activeClassName='active' to='install'>Install</Link></li>
           <li><Link activeClassName='active' to='grid'>Grid</Link></li>
           <li><Link activeClassName='active' to='tables'>Tables</Link></li>
           <li><Link activeClassName='active' to='cards'>Cards</Link></li>
@@ -18,6 +18,8 @@ function Template(props) {
           <li><Link activeClassName='active' to='typograph'>Typograph</Link></li>
           <li><Link activeClassName='active' to='colors'>Colors</Link></li>
           <li><Link activeClassName='active' to='helpers'>Helpers</Link></li>
+          <li><Link activeClassName='active' to='layouts'>Layouts</Link></li>
+          <li><Link activeClassName='active' to='components'>Components</Link></li>
         </ul>
         <div className='dm-syntec'>
           <a href='https://github.com/Synchro-TEC' target='_blank' rel='noopen'>

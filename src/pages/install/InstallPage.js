@@ -5,7 +5,7 @@ const InstallPage = (props) => {
 
   return(
     <div className='dm-content'>
-      <h4 className='sv-title'>How to Use</h4>
+      <h4 className='sv-title'>Install</h4>
 
 
     </div>

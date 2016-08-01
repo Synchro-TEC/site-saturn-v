@@ -9,10 +9,11 @@ import CardPage from './pages/card/card';
 import FormPage from './pages/form/form';
 import ButtonsPage from './pages/buttons/buttons';
 import TypographPage from './pages/typograph/Typograph';
-
 import HelpersPage from './pages/helpers/HelpersPage';
 import ColorsPage from './pages/colors/ColorsPage';
 import InstallPage from './pages/install/InstallPage';
+import LayoutsPage from './pages/layouts/LayoutsPage';
+import ComponentsPage from './pages/components/ComponentsPage';
 
 const App = () => (
   <Router history={hashHistory}>
@@ -27,6 +28,8 @@ const App = () => (
       <Route component={ColorsPage} path='/colors' />
       <Route component={HelpersPage} path='/helpers' />
       <Route component={InstallPage} path='/install' />
+      <Route component={LayoutsPage} path='/layouts' />
+      <Route component={ComponentsPage} path='/components' />
 
 
       {/*<Route path='dashboards'>*/}
