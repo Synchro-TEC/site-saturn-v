@@ -5,11 +5,10 @@ function Template(props) {
   return (
     <div>
       <input className='dm-sidebar-trigger-controller' id='show-menu' type='checkbox'  />
-      <label className='dm-sidebar-trigger' htmlFor='show-menu'>
-      </label>
+      <label className='dm-sidebar-trigger' htmlFor='show-menu' />
       <aside className='dm-sidebar'>
         <header className='sv-text-center'>
-          <Link title='Back to home'  to='/'><img height='auto' src='sv-logo.svg' width='180'/></Link>
+          <Link title='Back to home'  to='/'><img height='auto' src='sv-logo.svg' width='60%'/></Link>
         </header>
         <ul>
           <li><Link activeClassName='active' to='install'>Install</Link></li>

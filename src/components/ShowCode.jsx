@@ -20,7 +20,7 @@ class ShowCode extends React.Component {
     let labelText;
 
     if(this.state.visible){
-      containerKlass = 'dm-code-contaiter';
+      containerKlass = 'dm-code-container';
       cssKlass = 'block';
       labelText = 'Ocultar Código de Exemplo';
     } else {
@@ -36,7 +36,7 @@ class ShowCode extends React.Component {
             {this.props.children}
           </pre>
         </div>
-        <button className='dm-code-contaiter__button' type='button' onClick={() => this._toggle()}>{labelText}</button>
+        <button className='dm-code-container__button' type='button' onClick={() => this._toggle()}>{labelText}</button>
       </div>
     );
   }
