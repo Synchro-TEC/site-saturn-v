@@ -4,9 +4,12 @@ import {Link} from 'react-router';
 function Template(props) {
   return (
     <div>
+      <input className='dm-sidebar-trigger-controller' id='show-menu' type='checkbox'  />
+      <label className='dm-sidebar-trigger' htmlFor='show-menu'>
+      </label>
       <aside className='dm-sidebar'>
         <header className='sv-text-center'>
-          <Link title='Back to home'  to='/'><img height='auto' src='sv-logo.svg' width='200'/></Link>
+          <Link title='Back to home'  to='/'><img height='auto' src='sv-logo.svg' width='180'/></Link>
         </header>
         <ul>
           <li><Link activeClassName='active' to='install'>Install</Link></li>

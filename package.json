@@ -6,7 +6,7 @@
   "scripts": {
     "watch": "npm run lint && webpack --progress --color --watch --env.dev",
     "lint": "eslint src",
-    "build": "webpack"
+    "build": "webpack --progress --color --watch --env.prod"
   },
   "author": "",
   "license": "ISC",
