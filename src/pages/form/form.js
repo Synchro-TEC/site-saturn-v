@@ -137,8 +137,13 @@ const FormPage = (props) => {
             </div>
           </div>
 
-
         </form>
+
+        <ShowCode>
+          <PrismCode className='language-html'>
+            {require('!raw-loader!./FormGrid.html')}
+          </PrismCode>
+        </ShowCode>
 
         <div className='sv-vertical-marged-50' />
 
