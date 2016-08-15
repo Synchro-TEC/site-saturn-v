@@ -30,8 +30,6 @@ const ColorsPage = (props) => {
   return (
     <div className='dm-content'>
       <h4 className='sv-title'>Colors</h4>
-
-      <h5>Blue Palette</h5>
       {colors}
 
     </div>
