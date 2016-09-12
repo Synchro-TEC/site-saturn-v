@@ -11,7 +11,7 @@ const InstallPage = (props) => {
       </p>
 
       <div className='dm-code-container'>
-        <pre className="line-numbers" data-start="1">
+        <pre className='line-numbers' data-start='1'>
           <PrismCode className='language-html'>
             {require('!raw-loader!./installDemo.html')}
           </PrismCode>

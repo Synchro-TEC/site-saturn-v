@@ -14,15 +14,15 @@ const FormPage = (props) => {
         <form className='sv-form'>
           <label>
             <span>Name</span>
-            <input type='text' name='name' />
+            <input name='name' type='text' />
           </label>
           <label>
             <span>E-mail</span>
-            <input type='text' name='email' />
+            <input name='email' type='text'  />
           </label>
           <label>
             <span>Disabled Field</span>
-            <input type='text' name='login' disabled value='Disabled field' />
+            <input disabled name='login' type='text' value='Disabled field'/>
           </label>
           <label>
             <span>Gender</span>
@@ -50,15 +50,15 @@ const FormPage = (props) => {
         <form className='sv-form--full'>
           <label>
             <span>Name</span>
-            <input type='text' name='name' />
+            <input name='name' type='text' />
           </label>
           <label>
             <span>E-mail</span>
-            <input type='text' name='email' />
+            <input name='email' type='text' />
           </label>
           <label>
             <span>Disabled Field</span>
-            <input type='text' name='login' disabled value='Disabled field' />
+            <input disabled name='login' type='text' value='Disabled field' />
           </label>
           <label>
             <span>Gender</span>
@@ -88,13 +88,13 @@ const FormPage = (props) => {
             <div className='sv-grid-6 sv-grid-12-xs'>
               <label>
                 <span>Name</span>
-                <input type='text' name='name' />
+                <input name='name' type='text' />
               </label>
             </div>
             <div className='sv-grid-6 sv-grid-12-xs'>
               <label>
                 <span>E-mail</span>
-                <input type='text' name='email' />
+                <input name='email' type='text' />
               </label>
             </div>
             <div className='sv-grid-4 sv-grid-6-md sv-grid-12-xs'>
@@ -110,13 +110,13 @@ const FormPage = (props) => {
             <div className='sv-grid-4 sv-grid-6-md sv-grid-12-xs'>
               <label>
                 <span>Password</span>
-                <input type='text' name='password' />
+                <input name='password' type='text' />
               </label>
             </div>
             <div className='sv-grid-4 sv-grid-6-md sv-grid-12-xs'>
               <label>
                 <span>Confirm Password</span>
-                <input type='text' name='password' />
+                <input name='password' type='text' />
               </label>
             </div>
 
@@ -132,8 +132,8 @@ const FormPage = (props) => {
               <label className='sv-label--group'>
                 <span>Gender:</span>
               </label>
-              <label className='sv-label--radio'><input className='sv-radio' type='radio' name="gender" />Male</label>
-              <label className='sv-label--radio'><input className='sv-radio' type='radio' name="gender" />Female</label>
+              <label className='sv-label--radio'><input className='sv-radio' name='gender' type='radio' />Male</label>
+              <label className='sv-label--radio'><input className='sv-radio' name='gender' type='radio'  />Female</label>
             </div>
           </div>
 
@@ -152,11 +152,11 @@ const FormPage = (props) => {
         <form className='sv-form--inline'>
           <label>
             <span>Name</span>
-            <input type='text' name='name' />
+            <input name='name' type='text' />
           </label>
           <label>
             <span>E-mail</span>
-            <input type='text' name='email' />
+            <input name='email' type='text' />
           </label>
           <label>
             <span>Gender</span>
@@ -181,11 +181,11 @@ const FormPage = (props) => {
         <form className='sv-form'>
           <label>
             <span>Name</span>
-            <input type='text' name='name' className='is--invalid' />
+            <input className='is--invalid' name='name' type='text' />
           </label>
           <label>
             <span>E-mail</span>
-            <input type='text' name='email' className='is--valid' />
+            <input  className='is--valid' name='email' type='text' />
           </label>
         </form>
 
@@ -200,7 +200,7 @@ const FormPage = (props) => {
         <h5 className='sv-title'>Input Group</h5>
         <form className='sv-form'>
           <div className='sv-input-group'>
-            <input type='text' name='email' />
+            <input name='email' type='text' />
             <button className='sv-button primary' type='button'>Enviar</button>
           </div>
         </form>

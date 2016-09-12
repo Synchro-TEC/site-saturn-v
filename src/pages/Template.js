@@ -24,11 +24,11 @@ function Template(props) {
           <li><Link activeClassName='active' to='components'>Components</Link></li>
         </ul>
         <div className='dm-syntec'>
-          <a href='https://github.com/Synchro-TEC' target='_blank' rel='noopen'>
+          <a href='https://github.com/Synchro-TEC' rel='noopen' target='_blank'>
             <img height='auto' src='logo-synchro.png' width='100'/>
           </a>
           <br />
-          <a href='https://github.com/Synchro-TEC' target='_blank' rel='noopen'>
+          <a href='https://github.com/Synchro-TEC' rel='noopen' target='_blank'>
             <img height='40' src='syntec.svg' width='auto'/>
           </a>
         </div>
