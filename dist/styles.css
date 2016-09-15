@@ -1,3 +1,7 @@
+body {
+  margin-top: 60px !important;
+}
+
 pre {
   font-size: .8em;
   margin: 0;
@@ -5,12 +9,17 @@ pre {
 
 .dm-header {
   height: 60px;
-  padding: 0 15px;
+  padding: 10px;
   position: fixed;
-  background-color: #cfd8dc;
+  background-color: #24363B;
   top: 0;
   left: 0;
   right: 0;
+}
+
+.dm-hero {
+  background-color: #4CB7A2;
+  height: 540px;
 }
 
 .dm-content {
