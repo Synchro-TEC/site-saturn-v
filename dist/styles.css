@@ -9,7 +9,7 @@ pre {
 
 .dm-header {
   height: 60px;
-  padding: 10px;
+  padding: 18px;
   position: fixed;
   background-color: #24363B;
   top: 0;
@@ -18,7 +18,7 @@ pre {
 }
 
 .dm-hero {
-  background-color: #4CB7A2;
+  /*background-color: #4CB7A2;*/
   height: 540px;
 }
 

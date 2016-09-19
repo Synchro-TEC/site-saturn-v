@@ -5,7 +5,7 @@ function Template(props) {
   return (
     <div>
       <header className='dm-header'>
-        <Link title='Back to home'  to='/'><img height='auto' src='logo-text.svg' width='134px'/></Link>
+        <Link title='Back to home'  to='/'><img height='24px' src='logo-text.svg' width='auto'/></Link>
       </header>
 
 

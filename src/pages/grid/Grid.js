@@ -86,34 +86,43 @@ const GridPage = (props) => {
           <div className='sv-column sv-bg-color-green-300 _60'>_60</div>
         </div>
 
+        <ShowCode>
+          <PrismCode className='language-html'>
+            {require('!raw-loader!./gridTricks.html')}
+          </PrismCode>
+        </ShowCode>
+
+        <h5 className='sv-title'>Fixed Columns</h5>
+
+        <p>Saturn V grid has few fixed columns sizes, implemented fixed values: 100, 150, 200, 250 and 300 pixels</p>
+        <p>To use it, just add a class with _ + value + --fixed, ex: _100--fixed create a column with fixed 100px</p>
+
         <div className='sv-row'>
-          <div className='sv-column sv-bg-color-blue-1 _100--fixed'>aaa</div>
-          <div className='sv-column sv-bg-color-green-400 _300--fixed'>xxxx</div>
-          <div className='sv-column sv-bg-color-blue-200'>bbbb</div>
-          <div className='sv-column sv-bg-color-blue-300'>cccc</div>
+          <div className='sv-column sv-bg-color-blue-1 _100--fixed'>100px</div>
+          <div className='sv-column sv-bg-color-blue-200'>column</div>
+          <div className='sv-column sv-bg-color-blue-300'>column</div>
         </div>
 
         <div className='sv-row'>
-          <div className='sv-column sv-bg-color-blue-1 _200--fixed sv-no-padd'>aaa</div>
-          <div className='sv-column sv-bg-color-blue-300'>cccc</div>
+          <div className='sv-column sv-bg-color-blue-1 _150--fixed'>150px</div>
+          <div className='sv-column sv-bg-color-blue-300'>column</div>
         </div>
 
         <div className='sv-row'>
-          <div className='sv-column sv-bg-color-blue-1'>a</div>
-          <div className='sv-column sv-bg-color-blue-200'>b</div>
-          <div className='sv-column sv-bg-color-blue-300'>c</div>
-          <div className='sv-column sv-bg-color-blue-400'>d</div>
-          <div className='sv-column sv-bg-color-blue-500'>e</div>
+          <div className='sv-column sv-bg-color-blue-1 _150--fixed'>150px</div>
+          <div className='sv-column sv-bg-color-blue-300 _150--fixed'>150px</div>
+          <div className='sv-column sv-bg-color-blue-500'>column</div>
         </div>
 
         <div className='sv-row'>
-          <div className='sv-column sv-bg-color-blue-1'>a</div>
-          <div className='sv-column sv-bg-color-blue-200'>b</div>
-          <div className='sv-column sv-bg-color-blue-300'>c</div>
-          <div className='sv-column sv-bg-color-blue-400'>d</div>
-          <div className='sv-column sv-bg-color-blue-500'>e</div>
-          <div className='sv-column sv-bg-color-blue-600'>f</div>
-          <div className='sv-column sv-bg-color-blue-700'>g</div>
+          <div className='sv-column sv-bg-color-blue-1 _200--fixed'>200px</div>
+          <div className='sv-column sv-bg-color-blue-300 _250--fixed'>250px</div>
+          <div className='sv-column sv-bg-color-blue-500'>column</div>
+        </div>
+
+        <div className='sv-row'>
+          <div className='sv-column sv-bg-color-blue-1 _300--fixed'>300px</div>
+          <div className='sv-column sv-bg-color-blue-500'>column</div>
         </div>
 
 
