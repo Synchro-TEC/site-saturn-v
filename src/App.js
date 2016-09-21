@@ -1,6 +1,7 @@
 import React from 'react';
 import {Router, Route, IndexRoute, hashHistory} from 'react-router';
 import Template from './pages/Template';
+import TemplateDocs from './pages/TemplateDocs';
 
 import HomePage from './pages/home/Home';
 import GridPage from './pages/grid/Grid';
@@ -19,18 +20,7 @@ const App = () => (
   <Router history={hashHistory}>
     <Route component={Template} path='/'>
       <IndexRoute component={HomePage} />
-      <Route component={GridPage} path='/grid' />
-      <Route component={TablePage} path='/tables' />
-      <Route component={CardPage} path='/cards' />
-      <Route component={FormPage} path='/forms' />
-      <Route component={ButtonsPage} path='/buttons' />
-      <Route component={TypographPage} path='/typograph' />
-      <Route component={ColorsPage} path='/colors' />
-      <Route component={HelpersPage} path='/helpers' />
       <Route component={InstallPage} path='/install' />
-      <Route component={LayoutsPage} path='/layouts' />
-      <Route component={ComponentsPage} path='/components' />
-
 
       {/*<Route path='dashboards'>*/}
         {/*<IndexRoute components={{header: IndexHeaderDashboardPage, main: IndexDashboardPage}} />*/}
@@ -46,6 +36,21 @@ const App = () => (
         {/*<IndexRoute components={{header: IndexHeaderPresentationPage, main: IndexPresentationPage}}/>*/}
       {/*</Route>*/}
 
+    </Route>
+
+    <Route component={TemplateDocs} path='/docs'>
+      <IndexRoute component={GridPage} />
+
+      <Route component={GridPage} path='grid' />
+      <Route component={TablePage} path='tables' />
+      <Route component={CardPage} path='cards' />
+      <Route component={FormPage} path='forms' />
+      <Route component={ButtonsPage} path='buttons' />
+      <Route component={TypographPage} path='typograph' />
+      <Route component={ColorsPage} path='colors' />
+      <Route component={HelpersPage} path='helpers' />
+      <Route component={LayoutsPage} path='layouts' />
+      <Route component={ComponentsPage} path='components' />
     </Route>
 
     {/*<Route component={Player} path='apresentacao/:presentationId' />*/}

@@ -9,7 +9,6 @@ pre {
 
 .dm-header {
   height: 60px;
-  padding: 18px;
   position: fixed;
   background-color: #24363B;
   top: 0;
@@ -17,9 +16,50 @@ pre {
   right: 0;
 }
 
+.dm-logo {
+  width: 150px !important;
+  display: block;
+  float: left;
+  padding: 17px;
+  height: 60px;
+}
+
+.dm-menu {
+  display: block;
+  float: right;
+  padding: 14px;
+  height: 60px;
+  line-height: 30px;
+}
+
 .dm-hero {
-  /*background-color: #4CB7A2;*/
-  height: 540px;
+  height: 280px;
+  background: url('hero-text.svg') no-repeat center center;
+  background-size: 90% 90%;
+  transition: all 0.3s;
+}
+
+@media screen and (min-width: 800px) {
+  .dm-hero {
+    height: 460px;
+  }
+
+
+}
+
+.dm-home-content {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.dm-credits {
+  text-align: center;
+  font-size: x-small;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  position: absolute;
 }
 
 .dm-content {
@@ -31,9 +71,9 @@ pre {
   width: 250px;
   height: 100vh;
   position: fixed;
-  padding: 0;
+  padding: 40px 0 0 0;
   box-shadow: 1px 0 2px rgba(0,0,0,.2);
-  top: 0;
+  top: 60px;
   overflow-y: auto;
   overflow-x: hidden;
   transition: all .2s ease-in-out;
@@ -52,14 +92,14 @@ pre {
   padding: 7px 0 7px 25px;
   display: block;
   border-top: 1px solid #e0e6ed;
-  color: #444;
+  color: #8492A6;
 }
 
 .dm-sidebar ul li a:hover,
 .dm-sidebar ul li a.active {
   background-color: #f9fafc;
   padding: 7px 0 7px 20px;
-  border-left: 5px solid #bc3347;
+  border-left: 5px solid #1e88e5;
 }
 
 .dm-main {
@@ -159,20 +199,19 @@ pre {
 }
 
 .dm-color {
-  border-top-left-radius: .3rem;
-  border-top-right-radius: .3rem;
-  height: 70px;
+  height: 85px;
+  border-radius: 4px;
+  text-align: center;
+  padding: 5px;
+  margin: 15px 10px;
 }
-.dm-color--item {
-  line-height: 35px;
-}
+
 
 .dm-grid-show {
   padding: 0;
 }
-.dm-grid-show .col {
-  background-color: #fff;
-  border: 1px solid #e1e1e1;
+.dm-grid-show .sv-column {
+  color: #273444;
   text-align: center;
 }
 

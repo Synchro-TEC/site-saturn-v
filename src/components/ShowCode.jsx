@@ -22,11 +22,11 @@ class ShowCode extends React.Component {
     if(this.state.visible){
       containerKlass = 'dm-code-container';
       cssKlass = 'block';
-      labelText = 'Ocultar Código de Exemplo';
+      labelText = 'Hide Code';
     } else {
       containerKlass = 'dm-code-contaiter inactive';
       cssKlass = 'none';
-      labelText = 'Ver Código de Exemplo';
+      labelText = 'Show Code';
     }
 
     return (

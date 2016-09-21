@@ -8,24 +8,32 @@ const GridPage = (props) => {
       <div className='dm-grid-show'>
 
         <h4 className='sv-title'>Grid System</h4>
-        <p>Ridiculous simple grid system</p>
+        <p>Ridiculous simple grid system, just declare a <code>sv-row</code> and <code>sv-column</code> inside, just it.</p>
 
         <div className='sv-row'>
+          <div className='sv-column sv-bg-color-blue-50'>Column</div>
+        </div>
+
+        <div className='sv-row'>
+          <div className='sv-column sv-bg-color-blue-50'>Column</div>
           <div className='sv-column sv-bg-color-blue-100'>Column</div>
         </div>
 
         <div className='sv-row'>
+          <div className='sv-column sv-bg-color-blue-50'>Column</div>
           <div className='sv-column sv-bg-color-blue-100'>Column</div>
           <div className='sv-column sv-bg-color-blue-200'>Column</div>
         </div>
 
         <div className='sv-row'>
+          <div className='sv-column sv-bg-color-blue-50'>Column</div>
           <div className='sv-column sv-bg-color-blue-100'>Column</div>
           <div className='sv-column sv-bg-color-blue-200'>Column</div>
           <div className='sv-column sv-bg-color-blue-300'>Column</div>
         </div>
 
         <div className='sv-row'>
+          <div className='sv-column sv-bg-color-blue-50'>Column</div>
           <div className='sv-column sv-bg-color-blue-100'>Column</div>
           <div className='sv-column sv-bg-color-blue-200'>Column</div>
           <div className='sv-column sv-bg-color-blue-300'>Column</div>
@@ -33,20 +41,12 @@ const GridPage = (props) => {
         </div>
 
         <div className='sv-row'>
+          <div className='sv-column sv-bg-color-blue-50'>Column</div>
           <div className='sv-column sv-bg-color-blue-100'>Column</div>
           <div className='sv-column sv-bg-color-blue-200'>Column</div>
           <div className='sv-column sv-bg-color-blue-300'>Column</div>
           <div className='sv-column sv-bg-color-blue-400'>Column</div>
           <div className='sv-column sv-bg-color-blue-500'>Column</div>
-        </div>
-
-        <div className='sv-row'>
-          <div className='sv-column sv-bg-color-blue-100'>Column</div>
-          <div className='sv-column sv-bg-color-blue-200'>Column</div>
-          <div className='sv-column sv-bg-color-blue-300'>Column</div>
-          <div className='sv-column sv-bg-color-blue-400'>Column</div>
-          <div className='sv-column sv-bg-color-blue-500'>Column</div>
-          <div className='sv-column sv-bg-color-blue-600'>Column</div>
         </div>
 
 
@@ -59,31 +59,31 @@ const GridPage = (props) => {
         <h4 className='sv-title'>Grid Tricks</h4>
 
         <p>Saturn V grid has few tricks to help you adjust columns sizes, you can use some values that represent a
-          percentage</p>
+          percentage.<br />
 
-        <p>Implemented values: 20, 25, 40, 60, 75 and 80 percent; To use it, just add a class with _ + value, ex: _20 to
-          create a column with 20%</p>
+        Implemented values: 20, 25, 40, 60, 75 and 80 percent; To use it, just add a class with _ + value, ex: _20 to
+          create a column with 20%.</p>
 
 
         <div className='sv-row'>
-          <div className='sv-column sv-bg-color-blue-1 _20'>_20</div>
-          <div className='sv-column sv-bg-color-yellow-300 _80'>_80</div>
+          <div className='sv-column sv-bg-color-blue-50 _20'>_20</div>
+          <div className='sv-column sv-bg-color-blue-200 _80'>_80</div>
         </div>
 
         <div className='sv-row'>
-          <div className='sv-column sv-bg-color-blue-1 _25'>_25</div>
-          <div className='sv-column sv-bg-color-yellow-300 _75'>_75</div>
+          <div className='sv-column sv-bg-color-blue-50 _25'>_25</div>
+          <div className='sv-column sv-bg-color-blue-200 _75'>_75</div>
         </div>
 
         <div className='sv-row'>
-          <div className='sv-column sv-bg-color-blue-1 _20'>_20</div>
-          <div className='sv-column sv-bg-color-yellow-300 _20'>_20</div>
-          <div className='sv-column sv-bg-color-green-300 _60'>_60</div>
+          <div className='sv-column sv-bg-color-blue-50 _20'>_20</div>
+          <div className='sv-column sv-bg-color-blue-200 _20'>_20</div>
+          <div className='sv-column sv-bg-color-blue-400 _60'>_60</div>
         </div>
 
         <div className='sv-row'>
-          <div className='sv-column sv-bg-color-blue-1 _40'>_40</div>
-          <div className='sv-column sv-bg-color-green-300 _60'>_60</div>
+          <div className='sv-column sv-bg-color-blue-50 _40'>_40</div>
+          <div className='sv-column sv-bg-color-blue-200 _60'>_60</div>
         </div>
 
         <ShowCode>
@@ -94,35 +94,35 @@ const GridPage = (props) => {
 
         <h5 className='sv-title'>Fixed Columns</h5>
 
-        <p>Saturn V grid has few fixed columns sizes, implemented fixed values: 100, 150, 200, 250 and 300 pixels</p>
-        <p>To use it, just add a class with _ + value + --fixed, ex: _100--fixed create a column with fixed 100px</p>
+        <p>Saturn V grid has few fixed columns sizes, implemented fixed values: 100, 150, 200, 250 and 300 pixels.
+        <br /> To use it, just add a class with _ + value + --fixed, ex: _100--fixed create a column with fixed 100px.</p>
 
         <div className='sv-row'>
-          <div className='sv-column sv-bg-color-blue-1 _100--fixed'>100px</div>
+          <div className='sv-column sv-bg-color-blue-50 _100--fixed'>100px</div>
           <div className='sv-column sv-bg-color-blue-200'>column</div>
+          <div className='sv-column sv-bg-color-blue-400'>column</div>
+        </div>
+
+        <div className='sv-row'>
+          <div className='sv-column sv-bg-color-blue-50 _150--fixed'>150px</div>
+          <div className='sv-column sv-bg-color-blue-200'>column</div>
+        </div>
+
+        <div className='sv-row'>
+          <div className='sv-column sv-bg-color-blue-50 _150--fixed'>150px</div>
+          <div className='sv-column sv-bg-color-blue-200 _150--fixed'>150px</div>
+          <div className='sv-column sv-bg-color-blue-500'>column</div>
+        </div>
+
+        <div className='sv-row'>
+          <div className='sv-column sv-bg-color-blue-50 _200--fixed'>200px</div>
+          <div className='sv-column sv-bg-color-blue-200 _250--fixed'>250px</div>
+          <div className='sv-column sv-bg-color-blue-500'>column</div>
+        </div>
+
+        <div className='sv-row'>
+          <div className='sv-column sv-bg-color-blue-50 _300--fixed'>300px</div>
           <div className='sv-column sv-bg-color-blue-300'>column</div>
-        </div>
-
-        <div className='sv-row'>
-          <div className='sv-column sv-bg-color-blue-1 _150--fixed'>150px</div>
-          <div className='sv-column sv-bg-color-blue-300'>column</div>
-        </div>
-
-        <div className='sv-row'>
-          <div className='sv-column sv-bg-color-blue-1 _150--fixed'>150px</div>
-          <div className='sv-column sv-bg-color-blue-300 _150--fixed'>150px</div>
-          <div className='sv-column sv-bg-color-blue-500'>column</div>
-        </div>
-
-        <div className='sv-row'>
-          <div className='sv-column sv-bg-color-blue-1 _200--fixed'>200px</div>
-          <div className='sv-column sv-bg-color-blue-300 _250--fixed'>250px</div>
-          <div className='sv-column sv-bg-color-blue-500'>column</div>
-        </div>
-
-        <div className='sv-row'>
-          <div className='sv-column sv-bg-color-blue-1 _300--fixed'>300px</div>
-          <div className='sv-column sv-bg-color-blue-500'>column</div>
         </div>
 
 
