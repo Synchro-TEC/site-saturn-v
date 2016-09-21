@@ -6,7 +6,7 @@ const FormPage = (props) => {
 
   return(
     <div className='dm-content'>
-      <div className='dm-grid-show'>
+      <div>
         <h4 className='sv-title'>Forms</h4>
         We have some options to forms.
         <h5 className='sv-title'>Simple form</h5>
@@ -84,20 +84,22 @@ const FormPage = (props) => {
 
         <form className='sv-form--full'>
 
-          <div className='sv-container'>
-            <div className='sv-grid-6 sv-grid-12-xs'>
+          <div className='sv-row--with-gutter'>
+            <div className='sv-column'>
               <label>
                 <span>Name</span>
                 <input name='name' type='text' />
               </label>
             </div>
-            <div className='sv-grid-6 sv-grid-12-xs'>
+            <div className='sv-column'>
               <label>
                 <span>E-mail</span>
                 <input name='email' type='text' />
               </label>
             </div>
-            <div className='sv-grid-4 sv-grid-6-md sv-grid-12-xs'>
+          </div>
+          <div className='sv-row--with-gutter'>
+            <div className='sv-column'>
               <label>
                 <span>Gender</span>
                 <select>
@@ -107,20 +109,21 @@ const FormPage = (props) => {
                 </select>
               </label>
             </div>
-            <div className='sv-grid-4 sv-grid-6-md sv-grid-12-xs'>
+            <div className='sv-column'>
               <label>
                 <span>Password</span>
                 <input name='password' type='text' />
               </label>
             </div>
-            <div className='sv-grid-4 sv-grid-6-md sv-grid-12-xs'>
+            <div className='sv-column'>
               <label>
                 <span>Confirm Password</span>
                 <input name='password' type='text' />
               </label>
             </div>
-
-            <div className='sv-grid-6'>
+          </div>
+          <div className='sv-row--with-gutter'>
+            <div className='sv-column'>
               <label className='sv-label--group'>
                 <span>Conditions:</span>
               </label>
@@ -128,7 +131,7 @@ const FormPage = (props) => {
               <label className='sv-label--checkbox'><input className='sv-checkbox' type='checkbox' />I Accept</label>
             </div>
 
-            <div className='sv-grid-6'>
+            <div className='sv-column'>
               <label className='sv-label--group'>
                 <span>Gender:</span>
               </label>
