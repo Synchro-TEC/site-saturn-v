@@ -12,8 +12,8 @@ const HelpersPage = (props) => {
       <h5>Alinhamento de elementos</h5>
 
       <div style={{height: '50px'}}>
-        <div className='sv-bg-color-blue-200 sv-pull-right sv-padd-15'>Pull Right</div>
-        <div className='sv-bg-color-green-200 sv-pull-left sv-padd-15'>Pull Left</div>
+        <div className='sv-bg-color--blue-100 sv-pull-right sv-padd-15'>Pull Right</div>
+        <div className='sv-bg-color--green-100 sv-pull-left sv-padd-15'>Pull Left</div>
       </div>
 
       <div className='sv-vertical-marged-50'></div>

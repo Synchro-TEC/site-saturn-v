@@ -11,42 +11,42 @@ const GridPage = (props) => {
         <p>Ridiculous simple grid system, just declare a <code>sv-row</code> and <code>sv-column</code> inside, just it.</p>
 
         <div className='sv-row'>
-          <div className='sv-column sv-bg-color-blue-50'>Column</div>
+          <div className='sv-column sv-bg-color--blue-50'>Column</div>
         </div>
 
         <div className='sv-row'>
-          <div className='sv-column sv-bg-color-blue-50'>Column</div>
-          <div className='sv-column sv-bg-color-blue-100'>Column</div>
+          <div className='sv-column sv-bg-color--blue-50'>Column</div>
+          <div className='sv-column sv-bg-color--blue-100'>Column</div>
         </div>
 
         <div className='sv-row'>
-          <div className='sv-column sv-bg-color-blue-50'>Column</div>
-          <div className='sv-column sv-bg-color-blue-100'>Column</div>
-          <div className='sv-column sv-bg-color-blue-200'>Column</div>
+          <div className='sv-column sv-bg-color--blue-50'>Column</div>
+          <div className='sv-column sv-bg-color--blue-100'>Column</div>
+          <div className='sv-column sv-bg-color--blue-200'>Column</div>
         </div>
 
         <div className='sv-row'>
-          <div className='sv-column sv-bg-color-blue-50'>Column</div>
-          <div className='sv-column sv-bg-color-blue-100'>Column</div>
-          <div className='sv-column sv-bg-color-blue-200'>Column</div>
-          <div className='sv-column sv-bg-color-blue-300'>Column</div>
+          <div className='sv-column sv-bg-color--blue-50'>Column</div>
+          <div className='sv-column sv-bg-color--blue-100'>Column</div>
+          <div className='sv-column sv-bg-color--blue-200'>Column</div>
+          <div className='sv-column sv-bg-color--blue-300'>Column</div>
         </div>
 
         <div className='sv-row'>
-          <div className='sv-column sv-bg-color-blue-50'>Column</div>
-          <div className='sv-column sv-bg-color-blue-100'>Column</div>
-          <div className='sv-column sv-bg-color-blue-200'>Column</div>
-          <div className='sv-column sv-bg-color-blue-300'>Column</div>
-          <div className='sv-column sv-bg-color-blue-400'>Column</div>
+          <div className='sv-column sv-bg-color--blue-50'>Column</div>
+          <div className='sv-column sv-bg-color--blue-100'>Column</div>
+          <div className='sv-column sv-bg-color--blue-200'>Column</div>
+          <div className='sv-column sv-bg-color--blue-300'>Column</div>
+          <div className='sv-column sv-bg-color--blue-400'>Column</div>
         </div>
 
         <div className='sv-row'>
-          <div className='sv-column sv-bg-color-blue-50'>Column</div>
-          <div className='sv-column sv-bg-color-blue-100'>Column</div>
-          <div className='sv-column sv-bg-color-blue-200'>Column</div>
-          <div className='sv-column sv-bg-color-blue-300'>Column</div>
-          <div className='sv-column sv-bg-color-blue-400'>Column</div>
-          <div className='sv-column sv-bg-color-blue-500'>Column</div>
+          <div className='sv-column sv-bg-color--blue-50'>Column</div>
+          <div className='sv-column sv-bg-color--blue-100'>Column</div>
+          <div className='sv-column sv-bg-color--blue-200'>Column</div>
+          <div className='sv-column sv-bg-color--blue-300'>Column</div>
+          <div className='sv-column sv-bg-color--blue-400'>Column</div>
+          <div className='sv-column sv-bg-color--blue-500'>Column</div>
         </div>
 
 
@@ -55,6 +55,26 @@ const GridPage = (props) => {
             {require('!raw-loader!./simpleGrid.html')}
           </PrismCode>
         </ShowCode>
+
+        <h4 className='sv-title'>Grid with gutter</h4>
+
+        <div className='sv-row--with-gutter'>
+          <div className='sv-column sv-bg-color--blue-50'>Column</div>
+          <div className='sv-column sv-bg-color--blue-100'>Column</div>
+        </div>
+
+        <div className='sv-row--with-gutter'>
+          <div className='sv-column sv-bg-color--blue-50'>Column</div>
+          <div className='sv-column sv-bg-color--blue-100'>Column</div>
+          <div className='sv-column sv-bg-color--blue-200'>Column</div>
+        </div>
+
+        <div className='sv-row--with-gutter'>
+          <div className='sv-column sv-bg-color--blue-50'>Column</div>
+          <div className='sv-column sv-bg-color--blue-100'>Column</div>
+          <div className='sv-column sv-bg-color--blue-200'>Column</div>
+          <div className='sv-column sv-bg-color--blue-300'>Column</div>
+        </div>
 
         <h4 className='sv-title'>Grid Tricks</h4>
 
@@ -66,24 +86,47 @@ const GridPage = (props) => {
 
 
         <div className='sv-row'>
-          <div className='sv-column sv-bg-color-blue-50 _20'>_20</div>
-          <div className='sv-column sv-bg-color-blue-200 _80'>_80</div>
+          <div className='sv-column sv-bg-color--blue-50 _20'>_20</div>
+          <div className='sv-column sv-bg-color--blue-200 _80'>_80</div>
         </div>
 
         <div className='sv-row'>
-          <div className='sv-column sv-bg-color-blue-50 _25'>_25</div>
-          <div className='sv-column sv-bg-color-blue-200 _75'>_75</div>
+          <div className='sv-column sv-bg-color--blue-50 _25'>_25</div>
+          <div className='sv-column sv-bg-color--blue-200 _75'>_75</div>
         </div>
 
         <div className='sv-row'>
-          <div className='sv-column sv-bg-color-blue-50 _20'>_20</div>
-          <div className='sv-column sv-bg-color-blue-200 _20'>_20</div>
-          <div className='sv-column sv-bg-color-blue-400 _60'>_60</div>
+          <div className='sv-column sv-bg-color--blue-50 _20'>_20</div>
+          <div className='sv-column sv-bg-color--blue-200 _20'>_20</div>
+          <div className='sv-column sv-bg-color--blue-400 _60'>_60</div>
         </div>
 
         <div className='sv-row'>
-          <div className='sv-column sv-bg-color-blue-50 _40'>_40</div>
-          <div className='sv-column sv-bg-color-blue-200 _60'>_60</div>
+          <div className='sv-column sv-bg-color--blue-50 _40'>_40</div>
+          <div className='sv-column sv-bg-color--blue-200 _60'>_60</div>
+        </div>
+
+        <h5 className='sv-title'>With Gutter</h5>
+
+        <div className='sv-row--with-gutter'>
+          <div className='sv-column sv-bg-color--blue-50 _20'>_20</div>
+          <div className='sv-column sv-bg-color--blue-200 _80'>_80</div>
+        </div>
+
+        <div className='sv-row--with-gutter'>
+          <div className='sv-column sv-bg-color--blue-50 _25'>_25</div>
+          <div className='sv-column sv-bg-color--blue-200 _75'>_75</div>
+        </div>
+
+        <div className='sv-row--with-gutter'>
+          <div className='sv-column sv-bg-color--blue-50 _20'>_20</div>
+          <div className='sv-column sv-bg-color--blue-200 _20'>_20</div>
+          <div className='sv-column sv-bg-color--blue-400 _60'>_60</div>
+        </div>
+
+        <div className='sv-row--with-gutter'>
+          <div className='sv-column sv-bg-color--blue-50 _40'>_40</div>
+          <div className='sv-column sv-bg-color--blue-200 _60'>_60</div>
         </div>
 
         <ShowCode>
@@ -98,31 +141,31 @@ const GridPage = (props) => {
         <br /> To use it, just add a class with _ + value + --fixed, ex: _100--fixed create a column with fixed 100px.</p>
 
         <div className='sv-row'>
-          <div className='sv-column sv-bg-color-blue-50 _100--fixed'>100px</div>
-          <div className='sv-column sv-bg-color-blue-200'>column</div>
-          <div className='sv-column sv-bg-color-blue-400'>column</div>
+          <div className='sv-column sv-bg-color--blue-50 _100--fixed'>100px</div>
+          <div className='sv-column sv-bg-color--blue-200'>column</div>
+          <div className='sv-column sv-bg-color--blue-400'>column</div>
         </div>
 
         <div className='sv-row'>
-          <div className='sv-column sv-bg-color-blue-50 _150--fixed'>150px</div>
-          <div className='sv-column sv-bg-color-blue-200'>column</div>
+          <div className='sv-column sv-bg-color--blue-50 _150--fixed'>150px</div>
+          <div className='sv-column sv-bg-color--blue-200'>column</div>
         </div>
 
         <div className='sv-row'>
-          <div className='sv-column sv-bg-color-blue-50 _150--fixed'>150px</div>
-          <div className='sv-column sv-bg-color-blue-200 _150--fixed'>150px</div>
-          <div className='sv-column sv-bg-color-blue-500'>column</div>
+          <div className='sv-column sv-bg-color--blue-50 _150--fixed'>150px</div>
+          <div className='sv-column sv-bg-color--blue-200 _150--fixed'>150px</div>
+          <div className='sv-column sv-bg-color--blue-500'>column</div>
         </div>
 
         <div className='sv-row'>
-          <div className='sv-column sv-bg-color-blue-50 _200--fixed'>200px</div>
-          <div className='sv-column sv-bg-color-blue-200 _250--fixed'>250px</div>
-          <div className='sv-column sv-bg-color-blue-500'>column</div>
+          <div className='sv-column sv-bg-color--blue-50 _200--fixed'>200px</div>
+          <div className='sv-column sv-bg-color--blue-200 _250--fixed'>250px</div>
+          <div className='sv-column sv-bg-color--blue-500'>column</div>
         </div>
 
         <div className='sv-row'>
-          <div className='sv-column sv-bg-color-blue-50 _300--fixed'>300px</div>
-          <div className='sv-column sv-bg-color-blue-300'>column</div>
+          <div className='sv-column sv-bg-color--blue-50 _300--fixed'>300px</div>
+          <div className='sv-column sv-bg-color--blue-300'>column</div>
         </div>
 
 

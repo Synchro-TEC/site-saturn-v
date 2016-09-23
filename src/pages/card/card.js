@@ -29,8 +29,8 @@ const CardPage = (props) => {
       <div className='sv-vertical-marged-50'/>
 
       <div className='sv-card'>
-        <header className='sv-bg-color-gray-50'>
-          <h4 className='sv-color-blue-gray-700'>My Card</h4>
+        <header className='sv-bg-color--gray-50'>
+          <h4 className='sv-color-blue--gray-700'>My Card</h4>
         </header>
         <main>
           Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis,
@@ -50,8 +50,8 @@ const CardPage = (props) => {
       <div className='sv-vertical-marged-50'/>
 
       <div className='sv-card'>
-        <header className='big-header sv-bg-color-steel-400'>
-          <h3 className='sv-color-steel-700'>A Card with big header</h3>
+        <header className='big-header sv-bg-color--steel-400'>
+          <h3 className='sv-color--steel-700'>A Card with big header</h3>
         </header>
         <main>
           Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis,

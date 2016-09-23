@@ -1,26 +1,11 @@
 import React from 'react';
-import {Link} from 'react-router';
+import HeaderSite from '../components/HeaderSite';
+import { Link } from 'react-router';
 
 function TemplateDocs(props) {
   return (
     <div>
-      <header className='dm-header'>
-
-        <div className='dm-logo'>
-          <Link title='Back to home'  to='/'><img height='24px' src='logo-text.svg' width='auto'/></Link>
-        </div>
-
-        <div className='sv-text-right dm-menu'>
-          <span className='sv-horizontal-marged-25'>
-            <Link activeClassName='active' to='docs'>Docs</Link>
-          </span>
-          <span className='sv-horizontal-marged-25'>
-            <Link activeClassName='active' to='install'>Getting Started</Link>
-          </span>
-        </div>
-
-      </header>
-
+      <HeaderSite />
 
       <aside className='dm-sidebar'>
 
