@@ -7,35 +7,17 @@ const intensety = ['50', '100', '200', '300', '400', '500', '600', '700', '800',
 
 
 const ColorsPage = (props) => {
-  // let colors = mainColors.map((color) => {
-  //
-  //   let intense = intensety.map((i) => {
-  //     let fontColor = i > 400 ? '#fff' : '#424242';
-  //     if (color === 'yellow') {
-  //       fontColor = '#424242';
-  //     }
-  //     return (
-  //       <div className={`sv-bg-color--${color}-${i} dm-color`} key={`${color}-${i}`} style={{color: fontColor}}>
-  //         {`sv-color--${color}-${i}`} <br />
-  //         {`sv-bg-color--${color}-${i}`} <br />
-  //         {`sv-bd-color--${color}-${i}`}
-  //       </div>
-  //     );
-  //   });
-  //
-  //   return (
-  //     <div className='dm-color-column' key={`${color}`}>
-  //       {intense}
-  //     </div>
-  //   );
-
-  // });
   return (
     <div className='dm-content'>
       <h4 className='sv-title'>Colors</h4>
+      <p>
+        All colors can be used in 3 ways, <b>Font Color</b>, <b>Background Color</b> and <b>Border Color</b>.
+        To define font color, use the prefix <code>sv-color</code> + <code>--color-name</code>, for example: <code>sv-color--blue-50</code>.
+        To use as background color use <code>sv-bg-color</code> prefix and to border <code>sv-bd-color</code>.</p>
       <div className='sv-row'>
         <div className='sv-column'>
           <h6 className='sv-title'>Blue</h6>
+
           <div className='sv-bg-color--blue-50 dm-color  sv-color--gray-800'>
             --blue-50
           </div>
@@ -303,7 +285,11 @@ const ColorsPage = (props) => {
           </div>
         </div>
       </div>
-
+      <ShowCode>
+        <PrismCode className='language-html'>
+          {require('!raw-loader!./colors.html')}
+        </PrismCode>
+      </ShowCode>
     </div>
   );
 

@@ -32,11 +32,11 @@ class ShowCode extends React.Component {
     return (
       <div className={containerKlass}>
         <div style={{display: cssKlass}}>
-          <pre className="line-numbers" data-start="1">
+          <pre className='line-numbers' data-start='1'>
             {this.props.children}
           </pre>
         </div>
-        <button className='dm-code-container__button' type='button' onClick={() => this._toggle()}>{labelText}</button>
+        <button className='dm-code-container__button' onClick={() => this._toggle()} type='button'>{labelText}</button>
       </div>
     );
   }

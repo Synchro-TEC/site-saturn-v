@@ -2,30 +2,18 @@ body {
   margin-top: 60px !important;
 }
 
-.cr {
+.beta {
   width: 143px;
   padding: 0;
   text-align: center;
   color: #fff;
   font-size: .6rem;
-}
-
-.cr-sticky {
   position: fixed;
-}
-
-.cr-top    {
   top: 5px;
   left: -59px;
-}
-
-
-.cr-top.cr-left,
-.cr-bottom.cr-right {
   transform: rotate(-45deg);
+  background-color: #e43;
 }
-
-.cr-red { background-color: #e43; }
 
 pre {
   font-size: .8em;

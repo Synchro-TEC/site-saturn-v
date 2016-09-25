@@ -24,7 +24,7 @@ class HeaderSite extends React.Component {
             <Link activeClassName='active' to='install'>Getting Started</Link>
           </span>
         </div>
-        <div className='cr cr-top cr-left cr-sticky cr-red'>Beta</div>
+        <div className='beta'>Beta</div>
       </header>
     );
   }
