@@ -46,8 +46,13 @@ pre {
   line-height: 30px;
 }
 
-.dm-menu span a{
+.dm-menu span a {
   font-size: .9rem;
+  color: #fff;
+}
+
+.dm-menu span a:hover {
+  color: #00a4db;
 }
 
 .dm-hero {

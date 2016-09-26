@@ -15,6 +15,7 @@ import ColorsPage from './pages/colors/ColorsPage';
 import InstallPage from './pages/install/InstallPage';
 import LayoutsPage from './pages/layouts/LayoutsPage';
 import ComponentsPage from './pages/components/ComponentsPage';
+import DocsHomePage from './pages/docsHome/DocsHome';
 
 const App = () => (
   <Router history={hashHistory}>
@@ -39,7 +40,7 @@ const App = () => (
     </Route>
 
     <Route component={TemplateDocs} path='/docs'>
-      <IndexRoute component={GridPage} />
+      <IndexRoute component={DocsHomePage} />
 
       <Route component={GridPage} path='grid' />
       <Route component={TablePage} path='tables' />
