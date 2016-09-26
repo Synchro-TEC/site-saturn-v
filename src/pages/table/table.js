@@ -7,33 +7,35 @@ const TablePage = (props) => {
     <div className='dm-content'>
       <h4 className='sv-title'>Tables</h4>
       <p>
-        Tabela no Saturn-V possui diversas variantes, todas podem ter o comportamento responsivo, bastando apenas inserir a tabela
-        em um container com a classe, <code>sv-table-responsive-vertical</code>.
+        There are many options for table on Saturn-V, all can be responsive, just put table inside a container with
+        a <code>sv-table-responsive-vertical</code> class and use <code>data-title</code> attributes.
       </p>
-      <p>As variações são:</p>
+      <p>Avaliable Options:</p>
       <dl>
         <dt><code>with--borders</code></dt>
-        <dd>Adiciona bordas nas linas</dd>
+        <dd>Add borders on lines</dd>
 
         <dt><code>with--stripes</code></dt>
-        <dd>Transforma em tabela zebrada</dd>
+        <dd>Make a zebra table</dd>
 
         <dt><code>with--shadow</code></dt>
-        <dd>Sombra no container da tabela</dd>
+        <dd>Add shadow on table</dd>
 
         <dt><code>with--hover</code></dt>
-        <dd>Efeito de hover nas linhas</dd>
+        <dd>Hover efect</dd>
 
         <dt><code>with--space</code></dt>
-        <dd>Espaçamento maior na linha</dd>
+        <dd>Spaced line (big tables)</dd>
 
         <dt><code>with--condensed</code></dt>
-        <dd>Efeito de hover nas linhas</dd>
+        <dd>Condensed table, (compact tables)</dd>
 
       </dl>
-      <p>Lembrando que as variações podem ser usadas em conjunto.</p>
+      <p>All options can be used together.</p>
+
       <div className='sv-vertical-marged-50'></div>
-      <h5>Tabela zebrada</h5>
+
+      <h5>Zebra Table</h5>
 
       <table className='sv-table with--stripes'>
         <thead>
@@ -80,9 +82,9 @@ const TablePage = (props) => {
 
       <div className='sv-vertical-marged-50'></div>
 
-      <h5>Tabela zebrada com bordas e sombra</h5>
+      <h5>Zebra table with shadow</h5>
 
-      <table className='sv-table with--borders with--stripes with--shadow'>
+      <table className='sv-table with--stripes with--shadow'>
         <thead>
         <tr>
           <th>Id</th>
@@ -128,7 +130,7 @@ const TablePage = (props) => {
       <div className='sv-vertical-marged-50'></div>
 
 
-      <h5>Tabela com efeito hover.</h5>
+      <h5>Table with hover</h5>
       <table className='sv-table with--hover'>
         <thead>
         <tr>
@@ -169,7 +171,7 @@ const TablePage = (props) => {
       <div className='sv-vertical-marged-50'></div>
 
 
-      <h5>Tabela com efeito hover e sombra.</h5>
+      <h5>Table with hover and shadow</h5>
       <table className='sv-table with--hover with--shadow'>
         <thead>
         <tr>
@@ -209,7 +211,7 @@ const TablePage = (props) => {
 
       <div className='sv-vertical-marged-50'></div>
 
-      <h5>Tabela com bordas</h5>
+      <h5>Table with borders</h5>
       <table className='sv-table with--borders'>
         <thead>
         <tr>
@@ -249,7 +251,7 @@ const TablePage = (props) => {
 
       <div className='sv-vertical-marged-50'></div>
 
-      <h5>Table com bordas, efeito hover e sombra</h5>
+      <h5>Table with bordere, hover and shadow</h5>
       <table className='sv-table with--borders with--shadow with--hover'>
         <thead>
         <tr>
@@ -290,8 +292,7 @@ const TablePage = (props) => {
       <div className='sv-vertical-marged-50'></div>
 
 
-
-      <h5 className='sv-color-blue-grey-800'>Tabela zebreada com borda e efeito de hover</h5>
+      <h5 className='sv-color-blue-grey-800'>Zebra table with border and hover</h5>
       <table className='sv-table with--borders with--stripes with--hover'>
         <thead>
         <tr>
@@ -336,7 +337,7 @@ const TablePage = (props) => {
 
       <div className='sv-vertical-marged-50'></div>
 
-      <h5 className='sv-color-blue-grey-800'>Tabela Responsiva</h5>
+      <h5 className='sv-color-blue-grey-800'>Responsible Table</h5>
       <div className='sv-table-responsive-vertical'>
 
         <table className='sv-table with--hover with--borders'>
@@ -381,7 +382,7 @@ const TablePage = (props) => {
       <div className='sv-vertical-marged-50'></div>
 
 
-      <h5 className='sv-color-blue-grey-800'>Tabela espaçada, com borda e efeito de hover</h5>
+      <h5 className='sv-color-blue-grey-800'>Spaced table, with border and hover</h5>
 
       <table className='sv-table with--space with--hover with--borders'>
         <thead>
@@ -423,7 +424,7 @@ const TablePage = (props) => {
       <div className='sv-vertical-marged-50'></div>
 
 
-      <h5 className='sv-color-blue-grey-800'>Tabela condensada, com borda e efeito de hover</h5>
+      <h5 className='sv-color-blue-grey-800'>Condensed Table with border and hover</h5>
 
       <table className='sv-table with--condensed with--hover with--borders'>
         <thead>
