@@ -7,7 +7,8 @@ const DocsHomePage = (props) => {
     <div className='dm-content'>
       <h4 className='sv-title'>Documentation</h4>
 
-      <p>We are working hard to improve and coverage all Saturn V features, but this is a<b>Working In Progress</b> job.
+      <p>
+        We are working hard to improve and cover all Saturn V features, but this is a<b>Working In Progress</b> job.
       </p>
 
       <h5>Bugs and feature requests</h5>
