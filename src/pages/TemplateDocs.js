@@ -10,16 +10,16 @@ function TemplateDocs(props) {
       <aside className='dm-sidebar'>
 
         <ul>
-          <li><Link activeClassName='active' to='docs/grid'>Grid</Link></li>
-          <li><Link activeClassName='active' to='docs/tables'>Tables</Link></li>
-          <li><Link activeClassName='active' to='docs/cards'>Cards</Link></li>
-          <li><Link activeClassName='active' to='docs/forms'>Forms</Link></li>
           <li><Link activeClassName='active' to='docs/buttons'>Buttons</Link></li>
-          <li><Link activeClassName='active' to='docs/typograph'>Typograph</Link></li>
+          <li><Link activeClassName='active' to='docs/cards'>Cards</Link></li>
           <li><Link activeClassName='active' to='docs/colors'>Colors</Link></li>
+          <li><Link activeClassName='active' to='docs/components'>Components</Link></li>
+          <li><Link activeClassName='active' to='docs/forms'>Forms</Link></li>
+          <li><Link activeClassName='active' to='docs/grid'>Grid</Link></li>
           <li><Link activeClassName='active' to='docs/helpers'>Helpers</Link></li>
           <li><Link activeClassName='active' to='docs/layouts'>Layouts</Link></li>
-          <li><Link activeClassName='active' to='docs/components'>Components</Link></li>
+          <li><Link activeClassName='active' to='docs/tables'>Tables</Link></li>
+          <li><Link activeClassName='active' to='docs/typograph'>Typograph</Link></li>
         </ul>
 
         <div className='dm-syntec'>

@@ -8,18 +8,15 @@ const ButtonsPage = (props) => {
     <div className='dm-content'>
       <h4 className='sv-title'>Buttons</h4>
 
+      <h6>Main buttons</h6>
+
       <p>
-        Botões são essenciais para a interação do usuário com a aplicação. O Saturn-V implementa um conjunto de estilos com o objetivo
-        de cobrir a maioria dos cenários.
+        <button className='sv-button default marged'>Default button</button>
+        <button className='sv-button primary marged'>Primary button</button>
+        <button className='sv-button info marged'>Info button</button>
+        <button className='sv-button danger marged'>Danger button</button>
+        <button className='sv-button link marged'>Link button</button>
       </p>
-
-      <h5 className='sv-title'>Conjunto principal de botões</h5>
-
-      <p><button className='sv-button default'>Default button</button></p>
-      <p><button className='sv-button primary'>Primary button</button></p>
-      <p><button className='sv-button info'>Info button</button></p>
-      <p><button className='sv-button danger'>Danger button</button></p>
-      <p><button className='sv-button link'>Link button</button></p>
 
       <ShowCode>
         <PrismCode className='language-html'>
@@ -28,13 +25,14 @@ const ButtonsPage = (props) => {
       </ShowCode>
       <div className='sv-vertical-marged-50'></div>
 
-      <h5 className='sv-title'>Variações</h5>
-
       <h6>Small Buttons</h6>
-      <p><button className='sv-button default small'>Small Default button</button></p>
-      <p><button className='sv-button primary small'>Small Primary button</button></p>
-      <p><button className='sv-button info small'>Small Info button</button></p>
-      <p><button className='sv-button danger small'>Small Danger button</button></p>
+
+      <p>
+        <button className='sv-button default small marged'>Small Default button</button>
+        <button className='sv-button primary small marged'>Small Primary button</button>
+        <button className='sv-button info small marged'>Small Info button</button>
+        <button className='sv-button danger small marged'>Small Danger button</button>
+      </p>
 
       <ShowCode>
         <PrismCode className='language-html'>

@@ -7,9 +7,10 @@ const HelpersPage = (props) => {
     <div className='dm-content'>
       <h4 className='sv-title'>Helpers</h4>
 
-      <p>O Saturn-V disponibiliza diversas classes para uso geral, chamamos essas classes de helpers.</p>
+      <p>There are many helper in Saturn-V, we call helpers because they are css classes that help us in some repetitive
+         tasks, like alignments, margins, spaces, etc.</p>
 
-      <h5>Alinhamento de elementos</h5>
+      <h5>Elements Align</h5>
 
       <div style={{height: '50px'}}>
         <div className='sv-bg-color--blue-100 sv-pull-right sv-padd-15'>Pull Right</div>
@@ -18,8 +19,9 @@ const HelpersPage = (props) => {
 
       <div className='sv-vertical-marged-50'></div>
 
-      <h5>Alinhamento de texto</h5>
-      <h6>Texto alinhado a esquerda</h6>
+      <h5 className='sv-title'>Text Align</h5>
+
+      <h6>Left Align</h6>
       <p className='sv-text-left'>
         Mussum Ipsum, cacilds vidis litro abertis. Manduma pindureta quium dia nois paga. Não
         sou faixa preta cumpadi, sou preto inteiris,
@@ -30,7 +32,7 @@ const HelpersPage = (props) => {
         non tellus tristique interdum.
       </p>
 
-      <h6>Texto alinhado a direita</h6>
+      <h6>Right Align</h6>
       <p className='sv-text-right'>
         Mussum Ipsum, cacilds vidis litro abertis. Manduma pindureta quium dia nois paga. Não
         sou faixa preta cumpadi, sou preto inteiris,
@@ -41,7 +43,7 @@ const HelpersPage = (props) => {
         non tellus tristique interdum.
       </p>
 
-      <h6>Texto alinhado ao centro</h6>
+      <h6>Center Align</h6>
       <p className='sv-text-center'>
         Mussum Ipsum, cacilds vidis litro abertis. Manduma pindureta quium dia nois paga. Não
         sou faixa preta cumpadi, sou preto inteiris,
@@ -52,7 +54,7 @@ const HelpersPage = (props) => {
         non tellus tristique interdum.
       </p>
 
-      <h6>Texto justificado</h6>
+      <h6>Justify Align</h6>
       <p className='sv-text-justify'>
         Mussum Ipsum, cacilds vidis litro abertis. Manduma pindureta quium dia nois paga. Não
         sou faixa preta cumpadi, sou preto inteiris,
@@ -69,7 +71,7 @@ const HelpersPage = (props) => {
         </PrismCode>
       </ShowCode>
 
-      <h5>Espaçamentos</h5>
+      <h5 className='sv-title'>Magins</h5>
       <p>vertical-marged</p>
 
       <p>badges</p>
