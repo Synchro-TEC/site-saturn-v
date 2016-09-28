@@ -12,34 +12,49 @@ const ComponentsPage = (props) => {
 
       <div className='sv-messagebox info'>
         <button className='sv-messagebox__close'>&times;</button>
-        <h6>Info Message</h6>
-        <div>Message to show</div>
+        <header>
+          <h6>Info Message</h6>
+        </header>
+        <main>
+          <p>Message to show</p>
+        </main>
       </div>
-
-      <ShowCode>
-        <PrismCode className='language-html'>
-          {require('!raw-loader!./messageInfo.html')}
-        </PrismCode>
-      </ShowCode>
-
 
       <div className='sv-messagebox success'>
         <button className='sv-messagebox__close'>&times;</button>
-        <h6>The Title</h6>
-        <div>Message to show</div>
+        <header>
+          <h6>Success Message</h6>
+        </header>
+        <main>
+          <p>Message to show</p>
+        </main>
       </div>
 
       <div className='sv-messagebox warning'>
         <button className='sv-messagebox__close'>&times;</button>
-        <h6>The Title</h6>
-        <div>Message to show</div>
+        <header>
+          <h6>Warning Message</h6>
+        </header>
+        <main>
+          <p>Message to show</p>
+        </main>
       </div>
 
       <div className='sv-messagebox error'>
         <button className='sv-messagebox__close'>&times;</button>
-        <h6>The Title</h6>
-        <div>Message to show</div>
+        <header>
+          <h6>Error Message</h6>
+        </header>
+        <main>
+          <p>Message to show</p>
+        </main>
       </div>
+
+      <ShowCode>
+        <PrismCode className='language-html'>
+          {require('!raw-loader!./messages.html')}
+        </PrismCode>
+      </ShowCode>
 
     </div>
   )
