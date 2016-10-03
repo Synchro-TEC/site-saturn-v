@@ -2,12 +2,12 @@ import React from 'react';
 import {PrismCode} from 'react-prism';
 import ShowCode from '../../components/ShowCode.jsx';
 
-const ComponentsPage = (props) => {
+const PatternsPage = (props) => {
 
   return(
     <div className='dm-content'>
-      <h4 className='sv-title'>Components</h4>
-      <p>Components are small peaces of code that</p>
+      <h4 className='sv-title'>Patterns</h4>
+      <p>Patterns are definitions of how to solve often problems.</p>
       <h5>Message Box</h5>
 
       <div className='sv-messagebox info'>
@@ -56,10 +56,12 @@ const ComponentsPage = (props) => {
         </PrismCode>
       </ShowCode>
 
+      <h5>Search</h5>
+
     </div>
   )
 };
 
-ComponentsPage.displayName = 'ComponentsPage';
+PatternsPage.displayName = 'PatternsPage';
 
-export default ComponentsPage;
+export default PatternsPage;

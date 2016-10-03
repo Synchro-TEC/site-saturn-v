@@ -8,67 +8,36 @@
 
     <style>
 
-        body {
-            margin-top: 60px;
-        }
-
-        /************************
-            MOBILE FIRST
-        *************************/
-        .layout-one-sidebar {
-            display: none;
-        }
-
-        .layout-one-center-area,
-        .layout-one-right-area {
-            display: none;
+        .layout-sidebar {
+            height: 20vh;
+            overflow: auto;
         }
 
         /******************************************************
-            RESPONSIVE CONTROL
-            You know how your app should bahave,
-            this is your responsability.
-        *******************************************************/
+           RESPONSIVE CONTROL
+           You know how your app should bahave,
+           this is your responsability.
+       *******************************************************/
         @media screen and (min-width: 736px) {
 
-            .layout-one-sidebar {
+            .layout-sidebar {
                 display: block;
+                height: 100vh;
             }
 
-            .layout-one-menu {
-                height: calc(100vh - 60px);
-            }
 
-            .layout-one-center-area,
-            .layout-one-right-area {
-                display: block;
-            }
         }
+
+
 
     </style>
 </head>
 <body>
-    <header class='sv-header _v60 sv-bg-color--blue-600'>
-        <div class='sv-row--with-gutter sv-no-margins'>
-            <div class='sv-column _20'>
-                <h6 class='sv-color--steel-50'>Left Area</h6>
-            </div>
-            <div class='sv-column sv-text-center _60 layout-one-center-area'>
-                <h6 class='sv-color--steel-50'>Center Area</h6>
-            </div>
-            <div class='sv-column _20 sv-text-right layout-one-right-area'>
-                <h6 class='sv-color--steel-50'>Right Area</h6>
-            </div>
-        </div>
-    </header>
-
     <main>
         <div class='sv-row sv-no-margins'>
-            <div class='sv-column _200--fixed layout-one-sidebar'>
-                <aside class='layout-one-menu sv-bg-color--steel-100'>
-                    Menu Area
-                </aside>
-            </div>
+            <aside class='layout-sidebar sv-column _200--fixed sv-bg-color--orange-500'>
+                Menu Area
+            </aside>
             <div class='sv-column'>Content Area</div>
         </div>
     </main>

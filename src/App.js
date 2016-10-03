@@ -14,7 +14,7 @@ import HelpersPage from './pages/helpers/HelpersPage';
 import ColorsPage from './pages/colors/ColorsPage';
 import InstallPage from './pages/install/InstallPage';
 import LayoutsPage from './pages/layouts/LayoutsPage';
-import ComponentsPage from './pages/components/ComponentsPage';
+import PatternsPage from './pages/patterns/PatternsPage';
 import DocsHomePage from './pages/docsHome/DocsHome';
 
 const App = () => (
@@ -51,7 +51,7 @@ const App = () => (
       <Route component={ColorsPage} path='colors' />
       <Route component={HelpersPage} path='helpers' />
       <Route component={LayoutsPage} path='layouts' />
-      <Route component={ComponentsPage} path='components' />
+      <Route component={PatternsPage} path='patterns' />
     </Route>
 
     {/*<Route component={Player} path='apresentacao/:presentationId' />*/}
