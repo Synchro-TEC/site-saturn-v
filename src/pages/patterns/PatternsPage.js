@@ -55,8 +55,64 @@ const PatternsPage = (props) => {
           {require('!raw-loader!./messages.html')}
         </PrismCode>
       </ShowCode>
+      <div className='sv-vertical-marged-50'/>
+      <h5>Search & Result</h5>
 
-      <h5>Search</h5>
+      <div className='sv-row'>
+        <div className='sv-column '>
+          <form className='sv-form'>
+            <div className='sv-input-group'>
+              <input name='search' placeholder='Search for...' type='text' />
+              <button className='sv-button default' type='button'>Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div className='sv-vertical-marged-25'/>
+      <div className='sv-row'>
+        <div className='sv-column'>
+          <div className='sv-table-responsive-vertical'>
+
+            <table className='sv-table with--hover with--borders'>
+              <thead>
+              <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Company</th>
+                <th>Action</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td data-title='Id'>12</td>
+                <td data-title='Name'>Jhon Doe</td>
+                <td data-title='Company'>Seven</td>
+                <td data-title='Action'>Edit</td>
+              </tr>
+              <tr>
+                <td data-title='Id'>13</td>
+                <td data-title='Name'>Tony MacLaren</td>
+                <td data-title='Company'>SamySu</td>
+                <td data-title='Action'>Edit</td>
+              </tr>
+              <tr>
+                <td data-title='Id'>14</td>
+                <td data-title='Name'>Mary of Neighborhood</td>
+                <td data-title='Company'>OnMyTv SA</td>
+                <td data-title='Action'>Edit</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <ShowCode>
+        <PrismCode className='language-html'>
+          {require('!raw-loader!./searchResult.html')}
+        </PrismCode>
+      </ShowCode>
+      <div className='sv-vertical-marged-50'/>
 
     </div>
   )
