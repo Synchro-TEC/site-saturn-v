@@ -119,15 +119,15 @@ const PatternsPage = (props) => {
         <div className='sv-column'></div>
         <div className='sv-column sv-bg-color--gray-50 sv-padd-25'>
           <div className='sv-card sv-padd-15'>
-            {/*<main>*/}
-              <p className='bold sv-text-left'>
-                <img src='http://placehold.it/50/ff3300/ffffff' className='sv-right-marged-15' />
-                John Doe
-              </p>
-              <p className='small sv-no-margins'>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis,
-                filhis, espiritis santis.</p>
+            <p className='bold sv-text-left'>
+              <img src='http://placehold.it/50/ff3300/ffffff' className='sv-right-marged-15' />
+              John Doe
+            </p>
+            <p className='small sv-no-margins'>
+              Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá, depois divoltis porris,
+               paradis. Paisis, filhis, espiritis santis.
+            </p>
             <hr className='sv-line sv-bd-color--gray-300' />
-            {/*</main>*/}
           </div>
         </div>
         <div className='sv-column'></div>
