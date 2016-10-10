@@ -71,7 +71,7 @@ const HelpersPage = (props) => {
         </PrismCode>
       </ShowCode>
 
-      <h5 className='sv-title'>Magins</h5>
+      <h5 className='sv-title'>Margins</h5>
       <p>vertical-marged</p>
 
       <p>badges</p>
