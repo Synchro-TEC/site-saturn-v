@@ -114,13 +114,25 @@ const PatternsPage = (props) => {
       </ShowCode>
       <div className='sv-vertical-marged-25'/>
 
-      <h5></h5>
-      <div className='sv-row'>
-        <div className='sv-column'></div>
-        <div className='sv-column sv-bg-color--gray-50 sv-padd-25'>
+      <h5>Item</h5>
+      <div className='sv-row--with-gutter sv-bg-color--gray-50 sv-padd-15'>
+        <div className='sv-column sv-bg-color--gray-50'>
           <div className='sv-card sv-padd-15'>
             <p className='bold sv-text-left'>
-              <img src='http://placehold.it/50/ff3300/ffffff' className='sv-right-marged-15' />
+              <img className='sv-right-marged-15' src='http://placehold.it/50/ff3300/ffffff' />
+              John Doe
+            </p>
+            <p className='small sv-no-margins'>
+              Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá, depois divoltis porris,
+              paradis. Paisis, filhis, espiritis santis.
+            </p>
+            <hr className='sv-line sv-bd-color--gray-300' />
+          </div>
+        </div>
+        <div className='sv-column sv-bg-color--gray-50'>
+          <div className='sv-card sv-padd-15'>
+            <p className='bold sv-text-left'>
+              <img className='sv-right-marged-15' src='http://placehold.it/50/ffcc00/ffffff' />
               John Doe
             </p>
             <p className='small sv-no-margins'>
@@ -130,9 +142,89 @@ const PatternsPage = (props) => {
             <hr className='sv-line sv-bd-color--gray-300' />
           </div>
         </div>
+        <div className='sv-column sv-bg-color--gray-50'>
+          <div className='sv-card sv-padd-15'>
+            <p className='bold sv-text-left'>
+              <img className='sv-right-marged-15' src='http://placehold.it/50/3366cc/ffffff' />
+              John Doe
+            </p>
+            <p className='small sv-no-margins'>
+              Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá, depois divoltis porris,
+              paradis. Paisis, filhis, espiritis santis.
+            </p>
+            <hr className='sv-line sv-bd-color--gray-300' />
+          </div>
+        </div>
+      </div>
+
+      <h5>Forms</h5>
+
+      <div className='sv-row--with-gutter'>
+        <div className='sv-column'></div>
+        <div className='sv-column sv-bg-color--steel-100 sv-padd-25'>
+          <h6 className='sv-text-center'>User Form</h6>
+          <form className='sv-form--full'>
+            <fieldset>
+              <legend>Access Info</legend>
+              <div className='sv-row--with-gutter'>
+                <div className='sv-column'>
+                  <label>
+                    <span>Username</span>
+                    <input type='text' />
+                  </label>
+                </div>
+              </div>
+              <div className='sv-row--with-gutter'>
+                <div className='sv-column'>
+                  <label>
+                    <span>Password</span>
+                    <input type='password' />
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Personal Info</legend>
+              <div className='sv-row--with-gutter'>
+                <div className='sv-column'>
+                  <label>
+                    <span>Full Name</span>
+                    <input type='text' />
+                  </label>
+                </div>
+              </div>
+              <div className='sv-row--with-gutter'>
+                <div className='sv-column'>
+                  <label>
+                    <span>Birth Date</span>
+                    <input type='text' />
+                  </label>
+                </div>
+              </div>
+              <div className='sv-row--with-gutter'>
+                <div className='sv-column'>
+                  <label>
+                    <span data-info='(Optional)'>Gender</span>
+                    <select>
+                      <option>Choose</option>
+                      <option>Male</option>
+                      <option>Female</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+              <div className='sv-row--with-gutter'>
+                <div className='sv-column sv-text-center'>
+                  <button className='sv-button primary full' type='button'>Save</button>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
         <div className='sv-column'></div>
       </div>
 
+      <div className='sv-vertical-marged-25'/>
     </div>
   )
 };
