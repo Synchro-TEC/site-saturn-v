@@ -26,11 +26,16 @@ const FormPage = (props) => {
           </label>
           <label>
             <span>Gender</span>
-            <select>
-              <option value=''>Please, select</option>
-              <option value='M'>Male</option>
-              <option value='F'>Female</option>
-            </select>
+            <div className='sv-select'>
+              <select>
+                <option value=''>Please, select</option>
+                <option value='M'>Male</option>
+                <option value='F'>Female</option>
+              </select>
+              <label>
+                <i className='fa fa-angle-down fa-fw' />
+              </label>
+            </div>
           </label>
         </form>
 
@@ -44,45 +49,9 @@ const FormPage = (props) => {
 
 
 
+        <h5 className='sv-title'>Form width grid</h5>
 
-        <h5 className='sv-title'>Form with full width</h5>
-
-        <form className='sv-form--full'>
-          <label>
-            <span>Name</span>
-            <input name='name' type='text' />
-          </label>
-          <label>
-            <span>E-mail</span>
-            <input name='email' type='text' />
-          </label>
-          <label>
-            <span>Disabled Field</span>
-            <input disabled name='login' type='text' value='Disabled field' />
-          </label>
-          <label>
-            <span>Gender</span>
-            <select>
-              <option value=''>Please, select</option>
-              <option value='M'>Male</option>
-              <option value='F'>Female</option>
-            </select>
-          </label>
-        </form>
-
-        <ShowCode>
-          <PrismCode className='language-html'>
-            {require('!raw-loader!./simpleFormFull.html')}
-          </PrismCode>
-        </ShowCode>
-
-        <div className='sv-vertical-marged-50' />
-
-
-
-        <h5 className='sv-title'>Form with full width and grid</h5>
-
-        <form className='sv-form--full'>
+        <form className='sv-form'>
 
           <div className='sv-row--with-gutter'>
             <div className='sv-column'>
