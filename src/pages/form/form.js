@@ -8,7 +8,7 @@ const FormPage = (props) => {
     <div className='dm-content'>
       <div>
         <h4 className='sv-title'>Forms</h4>
-        We have some options to forms.
+        Nós temos algumas opções de forms.
         <h5 className='sv-title'>Simple form</h5>
 
         <form className='sv-form'>
@@ -94,67 +94,6 @@ const FormPage = (props) => {
             </div>
 
         </form>
-
-
-        {/* <form className='sv-form'>
-
-          <div className='sv-row--with-gutter'>
-            <div className='sv-column'>
-              <label>
-                <span>Name</span>
-                <input name='name' type='text' />
-              </label>
-            </div>
-            <div className='sv-column'>
-              <label>
-                <span>E-mail</span>
-                <input name='email' type='text' />
-              </label>
-            </div>
-          </div>
-          <div className='sv-row--with-gutter'>
-            <div className='sv-column'>
-              <label>
-                <span>Gender</span>
-                <select>
-                  <option value=''>Please, select</option>
-                  <option value='M'>Male</option>
-                  <option value='F'>Female</option>
-                </select>
-              </label>
-            </div>
-            <div className='sv-column'>
-              <label>
-                <span>Password</span>
-                <input name='password' type='text' />
-              </label>
-            </div>
-            <div className='sv-column'>
-              <label>
-                <span>Confirm Password</span>
-                <input name='password' type='text' />
-              </label>
-            </div>
-          </div>
-          <div className='sv-row--with-gutter'>
-            <div className='sv-column'>
-              <label className='sv-label--group'>
-                <span>Conditions:</span>
-              </label>
-              <label className='sv-label--checkbox'><input className='sv-checkbox' type='checkbox' />Send Mails</label>
-              <label className='sv-label--checkbox'><input className='sv-checkbox' type='checkbox' />I Accept</label>
-            </div>
-
-            <div className='sv-column'>
-              <label className='sv-label--group'>
-                <span>Gender:</span>
-              </label>
-              <label className='sv-label--radio'><input className='sv-radio' name='gender' type='radio' />Male</label>
-              <label className='sv-label--radio'><input className='sv-radio' name='gender' type='radio'  />Female</label>
-            </div>
-          </div>
-
-        </form> */}
 
         <ShowCode>
           <PrismCode className='language-html'>
