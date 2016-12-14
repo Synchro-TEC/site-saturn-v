@@ -49,9 +49,54 @@ const FormPage = (props) => {
 
 
 
-        <h5 className='sv-title'>Form width grid</h5>
+        <h5 className='sv-title'>Form with grid</h5>
 
         <form className='sv-form'>
+
+            <div className='sv-row--with-gutter'>
+                <div className='sv-column _40'>
+                    <label>
+                        <span>Name</span>
+                        <input name='name' type='text' />
+                    </label>
+                </div>
+                <div className='sv-column _60'>
+                    <label>
+                        <span>E-mail</span>
+                        <input name='email' type='text' />
+                    </label>
+                </div>
+            </div>
+
+            <div className='sv-row--with-gutter'>
+                <div className='sv-column _40'>
+                    <label>
+                        <span>Gender</span>
+                        <select>
+                            <option value=''>Please, select</option>
+                            <option value='M'>Male</option>
+                            <option value='F'>Female</option>
+                        </select>
+                    </label>
+                </div>
+                <div className='sv-column _40'>
+                    <label>
+                        <span>Password</span>
+                        <input name='password' type='text'  />
+                    </label>
+                </div>
+                <div className='sv-column _40'>
+                    <label>
+                        <span>Confirm Password</span>
+                        <input name='password' type='text' />
+                    </label>
+                </div>
+            </div>
+
+        </form>
+
+
+        {/* <form className='sv-form'>
 
           <div className='sv-row--with-gutter'>
             <div className='sv-column'>
@@ -109,7 +154,7 @@ const FormPage = (props) => {
             </div>
           </div>
 
-        </form>
+        </form> */}
 
         <ShowCode>
           <PrismCode className='language-html'>

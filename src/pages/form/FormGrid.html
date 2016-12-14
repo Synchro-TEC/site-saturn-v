@@ -1,19 +1,22 @@
-<form class='sv-form--full'>
+<form class='sv-form'>
 
-    <div class='sv-container'>
-        <div class='sv-grid-6 sv-grid-12-xs'>
+    <div class='sv-row--with-gutter'>
+        <div class='sv-column _40'>
             <label>
                 <span>Name</span>
                 <input type='text' name='name' />
             </label>
         </div>
-        <div class='sv-grid-6 sv-grid-12-xs'>
+        <div class='sv-column _60'>
             <label>
                 <span>E-mail</span>
                 <input type='text' name='email' />
             </label>
         </div>
-        <div class='sv-grid-4 sv-grid-6-md sv-grid-12-xs'>
+    </div>
+
+    <div class="sv-row--with-gutter">
+        <div class='sv-column _40'>
             <label>
                 <span>Gender</span>
                 <select>
@@ -23,35 +26,18 @@
                 </select>
             </label>
         </div>
-        <div class='sv-grid-4 sv-grid-6-md sv-grid-12-xs'>
+        <div class='sv-column _40'>
             <label>
                 <span>Password</span>
                 <input type='text' name='password' />
             </label>
         </div>
-        <div class='sv-grid-4 sv-grid-6-md sv-grid-12-xs'>
+        <div class='sv-column _40'>
             <label>
                 <span>Confirm Password</span>
                 <input type='text' name='password' />
             </label>
         </div>
-
-        <div class='sv-grid-6'>
-            <label class='sv-label--group'>
-                <span>Conditions:</span>
-            </label>
-            <label class='sv-label--checkbox'><input class='sv-checkbox' type='checkbox' />Send Mails</label>
-            <label class='sv-label--checkbox'><input class='sv-checkbox' type='checkbox' />I Accept</label>
-        </div>
-
-        <div class='sv-grid-6'>
-            <label class='sv-label--group'>
-                <span>Gender:</span>
-            </label>
-            <label class='sv-label--radio'><input class='sv-radio' type='radio' name="gender" />Male</label>
-            <label class='sv-label--radio'><input class='sv-radio' type='radio' name="gender" />Female</label>
-        </div>
     </div>
-
 
 </form>
