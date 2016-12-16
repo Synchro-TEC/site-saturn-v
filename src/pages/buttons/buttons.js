@@ -109,7 +109,11 @@ const ButtonsPage = (props) => {
       <p><button className='sv-button info' disabled>Button 1</button></p>
       <p><button className='sv-button danger' disabled>Button 1</button></p>
       <p><button className='sv-button warning' disabled>Button 1</button></p>
-
+      <p><button className='sv-button link link-default' disabled>Disabled link button</button></p>
+      <p><button className='sv-button link link-primary' disabled>Disabled link button</button></p>
+      <p><button className='sv-button link link-info' disabled>Disabled link button</button></p>
+      <p><button className='sv-button link link-danger' disabled>Disabled link button</button></p>
+      <p><button className='sv-button link link-warning' disabled>Disabled link button</button></p>
 
       <ShowCode>
         <PrismCode className='language-html'>

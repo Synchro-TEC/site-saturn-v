@@ -13,6 +13,7 @@ function TemplateDocs(props) {
           <li><Link activeClassName='active' to='docs/buttons'>Buttons</Link></li>
           <li><Link activeClassName='active' to='docs/cards'>Cards</Link></li>
           <li><Link activeClassName='active' to='docs/colors'>Colors</Link></li>
+          <li><Link activeClassName='active' to='docs/components'>Components</Link></li>
           <li><Link activeClassName='active' to='docs/forms'>Forms</Link></li>
           <li><Link activeClassName='active' to='docs/grid'>Grid</Link></li>
           <li><Link activeClassName='active' to='docs/helpers'>Helpers</Link></li>

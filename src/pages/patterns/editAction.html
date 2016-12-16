@@ -1,0 +1,110 @@
+<ul class='sv-breadcrumb'>
+    <li><a href='#'><i class='fa fa-home fa-fw'></i></a></li>
+    <li><a href='#'><i class='fa fa-male fa-fw'></i> Users</a></li>
+    <li><a href='#'>New User</a></li>
+</ul>
+
+<hr/>
+
+<div class='sv-row'>
+    <div class='sv-column _20'></div>
+    <div class='sv-column _60'>
+        <form class='sv-form sv-padd-25 '>
+            <fieldset>
+                <legend>Access Info</legend>
+
+                <label>
+                    <span>Username</span>
+                    <input type='text' placeholder='Your username to login app'/>
+                </label>
+
+                <div class='sv-row--with-gutter sv-no-margins'>
+                    <div class='sv-column'>
+                        <label>
+                            <span data-info='(8 caracters)' data-error='Error'>Password</span>
+                            <input type='password' class='is--invalid'/>
+                        </label>
+                    </div>
+                    <div class='sv-column'>
+                        <label>
+                            <span>Confirm Password</span>
+                            <input type='password'/>
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Personal Info</legend>
+                <label>
+                    <span>Full Name</span>
+                    <input type='text' placeholder='All names'/>
+                </label>
+                <label>
+                    <span data-info='(Optional)'>Birth Date</span>
+                    <input type='text' placeholder='dd/mm/yyyy'/>
+                </label>
+                <label>
+                    <span>Gender:</span>
+                    <div class='sv-select'>
+                        <select>
+                            <option value=''>Please, select</option>
+                            <option value='M'>Male</option>
+                            <option value='F'>Female</option>
+                        </select>
+                        <label>
+                            <i class='fa fa-angle-down fa-fw'></i>
+                        </label>
+                    </div>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Skills</legend>
+
+
+                <label>
+                    <span>Language:</span>
+
+                    <label>
+                        <input type='checkbox' value='English'/> English
+                    </label>
+                    <label>
+                        <input type='checkbox' value='Portuguese'/> Portuguese
+                    </label>
+                    <label>
+                        <input type='checkbox' value='Spanish'/> Spanish
+                    </label>
+                </label>
+
+
+                <label>
+                    <span>Level:</span>
+                    <label>
+                        <input type='radio' value='Junior' name='level'/> Junior
+                    </label>
+                    <label>
+                        <input type='radio' value='Master' name='level'/> Master
+                    </label>
+                    <label>
+                        <input type='radio' value='Leader' name='level'/> Leader
+                    </label>
+                    <label>
+                        <input type='radio' value='Senior' name='level'/> Senior
+                    </label>
+                </label>
+
+
+            </fieldset>
+            <div class='sv-row sv-padd-25'>
+                <div class='sv-column sv-text-center'>
+                    <button class='sv-button link link-danger'>Cancel</button>
+                </div>
+                <div class='sv-column sv-text-center'>
+                    <button class='sv-button primary'><i class='fa fa-floppy-o fa-fw'></i> Save</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class='sv-column _20'></div>
+</div>

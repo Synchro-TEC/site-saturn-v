@@ -7,31 +7,6 @@ const PatternsPage = (props) => {
   return(
     <div className='dm-content'>
       <h4 className='sv-title'>Patterns</h4>
-      <p>Patterns are definitions of how to solve often problems.</p>
-
-      <h5>Loader</h5>
-
-      <p>Default loader: <br /><span className='sv-bar-loader'/></p>
-      <p>Large loader: <br /><span className='sv-bar-loader large'/></p>
-
-
-      <h5>Breadcrumbs</h5>
-
-      <ul className='sv-breadcrumb'>
-        <li><a href='#'><i className='fa fa-home fa-fw' /></a></li>
-        <li><a href='#'><i className='fa fa-male fa-fw' /> Users</a></li>
-        <li><a href='#'><i className='fa fa-database fa-fw' /> Items</a></li>
-        <li><a href='#'><i className='fa fa-cog fa-fw' /> Config</a></li>
-      </ul>
-
-      <ul className='sv-breadcrumb'>
-        <li><a href='#'><i className='fa fa-home fa-fw' /></a></li>
-        <li><a href='#'>Users</a></li>
-        <li><a href='#'>Items</a></li>
-        <li><a href='#'>Config</a></li>
-      </ul>
-
-      <div className='sv-vertical-marged-50'/>
 
       <h5>List Action</h5>
 
@@ -56,11 +31,11 @@ const PatternsPage = (props) => {
                     <form className='sv-form'>
 
                       <div className='sv-input-group'>
-                        <span className='label --first'><i className='fa fa-search fa-fw' /></span>
-                        <input type='search' className='--center' placeholder='Type to search!' />
-                        <span className='label-action --last'>Filter <i className='fa fa-sliders fa-fw' /></span>
+                        <span className='label at-first'><i className='fa fa-search fa-fw' /></span>
+                        <input type='search' className='on-center' placeholder='Type to search!' />
+                        <span className='label-action at-last'>Filter <i className='fa fa-sliders fa-fw' /></span>
                         <section className='action-container'>
-                          <div className='sv-triangle --right'></div>
+                          <div className='sv-triangle on-right'></div>
 
                           <section className='action-container--content'>
                             <div className='sv-row--with-gutter'>
@@ -187,7 +162,7 @@ const PatternsPage = (props) => {
               <tfoot>
               <tr>
                 <td colSpan='8' className='sv-text-center'>
-                  <button className='sv-button link link-info'><i className='fa fa-chevron-left fa-fw' /> Anterior</button>
+                  <button className='sv-button link link-info' disabled><i className='fa fa-chevron-left fa-fw' /> Anterior</button>
                   <button className='sv-button link link-info'>Próximo <i className='fa fa-chevron-right fa-fw' /></button>
                 </td>
               </tr>
@@ -196,6 +171,12 @@ const PatternsPage = (props) => {
           </div>
         </section>
       </div>
+
+      <ShowCode>
+        <PrismCode className='language-html'>
+          {require('!raw-loader!./listAction.html')}
+        </PrismCode>
+      </ShowCode>
 
       <div className='sv-vertical-marged-25'/>
 
@@ -317,79 +298,11 @@ const PatternsPage = (props) => {
         </section>
       </div>
 
-      <div className='sv-vertical-marged-25'/>
-
-      <h5>Message Box</h5>
-
-      <div className='browser-mockup sv-padd-25'>
-
-        <div className='sv-messagebox info'>
-          <button className='sv-messagebox__close'>&times;</button>
-          <header>
-            <h6>Info Message</h6>
-          </header>
-          <main>
-            <p>Message to show</p>
-          </main>
-        </div>
-
-        <div className='sv-messagebox success'>
-          <button className='sv-messagebox__close'>&times;</button>
-          <header>
-            <h6>Success Message</h6>
-          </header>
-          <main>
-            <p>Message to show</p>
-          </main>
-        </div>
-
-        <div className='sv-messagebox warning'>
-          <button className='sv-messagebox__close'>&times;</button>
-          <header>
-            <h6>Warning Message</h6>
-          </header>
-          <main>
-            <p>Message to show</p>
-          </main>
-        </div>
-
-        <div className='sv-messagebox error'>
-          <button className='sv-messagebox__close'>&times;</button>
-          <header>
-            <h6>Error Message</h6>
-          </header>
-          <main>
-            <p>Message to show</p>
-          </main>
-        </div>
-      </div>
-
       <ShowCode>
         <PrismCode className='language-html'>
-          {require('!raw-loader!./messages.html')}
+          {require('!raw-loader!./editAction.html')}
         </PrismCode>
       </ShowCode>
-
-      <h5>Info Card</h5>
-      <div className='sv-row'>
-        <div className='sv-column'></div>
-        <div className='sv-column sv-bg-color--gray-50 sv-padd-25'>
-          <div className='sv-card sv-padd-15'>
-            <p className='bold sv-text-left'>
-              <img src='http://placehold.it/50/ff3300/ffffff' className='sv-right-marged-15' />
-              John Doe
-            </p>
-            <p className='small sv-no-margins'>
-              Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá, depois divoltis porris,
-               paradis. Paisis, filhis, espiritis santis.
-            </p>
-            <hr className='sv-line sv-bd-color--gray-300' />
-          </div>
-        </div>
-        <div className='sv-column'></div>
-      </div>
-
-
 
 
     </div>
