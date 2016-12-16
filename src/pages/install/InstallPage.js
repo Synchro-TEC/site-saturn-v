@@ -7,7 +7,7 @@ const InstallPage = (props) => {
     <div className='dm-content'>
       <h4 className='sv-title'>Install</h4>
       <p>
-        A instalação do Saturn-V é muito simples, nós já disponibilizamos ele minificado e sendo servido diretamente de nosssa CDN.
+        Install Saturn-V is easy, use our CDN!
       </p>
 
       <div className='dm-code-container'>
