@@ -23,21 +23,6 @@ const App = () => (
     <Route component={Template} path='/'>
       <IndexRoute component={HomePage} />
       <Route component={InstallPage} path='/install' />
-
-      {/*<Route path='dashboards'>*/}
-        {/*<IndexRoute components={{header: IndexHeaderDashboardPage, main: IndexDashboardPage}} />*/}
-        {/*<Route components={{header: ShowHeaderDashboardPage, main: ShowDashboardPage}} path=':dashboardId' />*/}
-      {/*</Route>*/}
-
-      {/*<Route path='analises'>*/}
-        {/*<IndexRoute components={{header: IndexHeaderAnalisesPage, main: IndexAnalisesPage}}/>*/}
-        {/*<Route components={{header: ShowHeaderAnalisesPage, main: ShowAnalisesPage}} path=':reportId' />*/}
-      {/*</Route>*/}
-
-      {/*<Route path='apresentacoes'>*/}
-        {/*<IndexRoute components={{header: IndexHeaderPresentationPage, main: IndexPresentationPage}}/>*/}
-      {/*</Route>*/}
-
     </Route>
 
     <Route component={TemplateDocs} path='/docs'>
@@ -55,9 +40,6 @@ const App = () => (
       <Route component={LayoutsPage} path='layouts' />
       <Route component={PatternsPage} path='patterns' />
     </Route>
-
-    {/*<Route component={Player} path='apresentacao/:presentationId' />*/}
-
 
   </Router>
 );
