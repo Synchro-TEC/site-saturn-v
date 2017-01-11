@@ -57,7 +57,7 @@ const ButtonsPage = (props) => {
 
       <ShowCode>
         <PrismCode className='language-html'>
-          {require('!raw-loader!./SmallButtons.html')}
+          {require('!raw-loader!./LinkButtons.html')}
         </PrismCode>
       </ShowCode>
       <div className='sv-vertical-marged-50'></div>
