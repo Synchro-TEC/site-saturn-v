@@ -131,7 +131,34 @@ const ComponentsPage = (props) => {
         </PrismCode>
       </ShowCode>
 
+      <div className='sv-vertical-marged-25'/>
 
+      <h5>Paginate</h5>
+      <div className='sv-paginate'>
+        <button className='sv-button link link-info' disabled>
+          <i className='fa fa-chevron-left'/>
+          Anterior
+        </button>
+        <em>
+          1
+        </em>
+        <a>2</a>
+        <a>3</a>
+        <a>4</a>
+        <a>5</a>
+        <span> ... </span>
+        <a>12</a>
+        <a>13</a>
+        <button className='sv-button link link-info'>
+          Próximo
+          <i className='fa fa-chevron-right'/>
+        </button>
+      </div>
+      <ShowCode>
+        <PrismCode className='language-html'>
+          {require('!raw-loader!./paginate.html')}
+        </PrismCode>
+      </ShowCode>
     </div>
   )
 };
