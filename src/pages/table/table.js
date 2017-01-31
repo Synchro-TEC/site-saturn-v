@@ -464,6 +464,48 @@ const TablePage = (props) => {
 
       <div className='sv-vertical-marged-50'></div>
 
+      <h5 className='sv-color-blue-grey-800'>Table with sortable columns</h5>
+      <table className='sv-table with--stripes with--shadow'>
+        <thead>
+          <tr>
+            <th>Id <i className='fa fa-sort sv-sort'/></th>
+            <th>Name <i className='fa fa-sort-asc sv-sort is--active' /></th>
+            <th>Company <i className='fa fa-sort-desc sv-sort is--active'/></th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>12</td>
+            <td>Jhon Doe</td>
+            <td>Seven</td>
+            <td>Edit</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>Tony MacLaren</td>
+            <td>SamySu</td>
+            <td>Edit</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>Mary of Neighborhood</td>
+            <td>OnMyTv SA</td>
+            <td>Edit</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>Chapolin Colorado</td>
+            <td>OnMyTv SA</td>
+            <td>Edit</td>
+          </tr>
+        </tbody>
+      </table>
+      <ShowCode>
+        <PrismCode className='language-html'>
+          {require('!raw-loader!./TableWithSortableColumn.html')}
+        </PrismCode>
+      </ShowCode>
     </div>
   );
 };
