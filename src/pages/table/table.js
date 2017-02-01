@@ -468,9 +468,9 @@ const TablePage = (props) => {
       <table className='sv-table with--stripes with--shadow'>
         <thead>
           <tr>
-            <th>Id <i className='fa fa-sort sv-sort'/></th>
-            <th>Name <i className='fa fa-sort-asc sv-sort is--active' /></th>
-            <th>Company <i className='fa fa-sort-desc sv-sort is--active'/></th>
+            <th><i className='fa fa-sort sv-sort'/>Id</th>
+            <th><i className='fa fa-sort-asc sv-sort is--active' />Name</th>
+            <th><i className='fa fa-sort-desc sv-sort is--active'/>Company</th>
             <th>Action</th>
           </tr>
         </thead>
